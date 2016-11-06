@@ -1,0 +1,34 @@
+{
+  "name": "protype",
+  "version": "0.0.0",
+  "description": "Determine type of property.",
+  "main": "protype.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/volkovasystems/protype.git"
+  },
+  "keywords": [
+    "typeof",
+    "property",
+    "string",
+    "number",
+    "boolean",
+    "function",
+    "object",
+    "undefined",
+    "symbol",
+    "protype"
+  ],
+  "author": "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/volkovasystems/protype/issues"
+  },
+  "homepage": "https://github.com/volkovasystems/protype#readme",
+  "dependencies": {
+    "harden": "^0.4.0"
+  }
+}

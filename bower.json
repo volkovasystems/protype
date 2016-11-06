@@ -1,0 +1,33 @@
+{
+  "name": "protype",
+  "version": "0.0.0",
+  "description": "Determine type of property.",
+  "main": "protype.js",
+  "authors": [
+    "Richeve S. Bebedor <richeve.bebedor@gmail.com>"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "typeof",
+    "property",
+    "string",
+    "number",
+    "boolean",
+    "function",
+    "object",
+    "undefined",
+    "symbol",
+    "protype"
+  ],
+  "homepage": "https://github.com/volkovasystems/protype",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "harden": "^0.4.0"
+  }
+}

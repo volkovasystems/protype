@@ -1,0 +1,11 @@
+{
+  "name": "protype",
+  "version": "0.0.0",
+  "dependencies": {
+    "harden": {
+      "version": "0.4.0",
+      "from": "harden@latest",
+      "resolved": "https://registry.npmjs.org/harden/-/harden-0.4.0.tgz"
+    }
+  }
+}
