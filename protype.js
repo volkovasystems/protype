@@ -47,18 +47,22 @@
 
 	@include:
 		{
+			"cemento": "cemento",
 			"harden": "harden"
 		}
 	@end-include
 */
 
 if( typeof require == "function" ){
+	var cemento = require( "cemento" );
 	var harden = require( "harden" );
 }
 
-if( typeof window != "undefined" &&
-	!( "harden" in window ) )
-{
+if( typeof window != "undefined" && !( "cemento" in window ) ){
+	throw new Error( "cemento is not defined" );
+}
+
+if( typeof window != "undefined" && !( "harden" in window ) ){
 	throw new Error( "harden is not defined" );
 }
 
@@ -105,22 +109,19 @@ this.protype = function protype( property, type ){
 		return ( typeof property == type );
 
 	}else{
-		let type = { };
-
-		harden( "STRING", protype( property, STRING ), type );
-		harden( "NUMBER", protype( property, NUMBER ), type );
-		harden( "BOOLEAN", protype( property, BOOLEAN ), type );
-		harden( "FUNCTION", protype( property, FUNCTION ), type );
-		harden( "OBJECT", protype( property, OBJECT ), type );
-		harden( "UNDEFINED", protype( property, UNDEFINED ), type );
-		harden( "SYMBOL", protype( property, SYMBOL ), type );
-
-		return type;
+		return cemento( {
+			"STRING": protype( property, STRING ),
+			"NUMBER": protype( property, NUMBER ),
+			"BOOLEAN": protype( property, BOOLEAN ),
+			"FUNCTION": protype( property, FUNCTION ),
+			"OBJECT": protype( property, OBJECT ),
+			"UNDEFINED": protype( property, UNDEFINED ),
+			"SYMBOL": protype( property, SYMBOL ),
+			"type": ( typeof property )
+		} );
 	}
 };
 
-if( typeof module != "undefined" &&
-	typeof module.exports != "undefined" )
-{
+if( typeof module != "undefined" && typeof module.exports != "undefined" ){
 	module.exports = this.protype;
 }
