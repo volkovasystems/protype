@@ -1,23 +1,23 @@
 {
   "name": "protype",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "dependencies": {
     "cemento": {
-      "version": "0.0.0",
+      "version": "0.1.0",
       "from": "cemento@latest",
-      "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.0.0.tgz",
+      "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.1.0.tgz",
       "dependencies": {
         "harden": {
-          "version": "0.5.0",
+          "version": "0.6.0",
           "from": "harden@latest",
-          "resolved": "https://registry.npmjs.org/harden/-/harden-0.5.0.tgz"
+          "resolved": "https://registry.npmjs.org/harden/-/harden-0.6.0.tgz"
         }
       }
     },
     "harden": {
-      "version": "0.5.0",
+      "version": "0.6.0",
       "from": "harden@latest",
-      "resolved": "https://registry.npmjs.org/harden/-/harden-0.5.0.tgz"
+      "resolved": "https://registry.npmjs.org/harden/-/harden-0.6.0.tgz"
     }
   }
 }

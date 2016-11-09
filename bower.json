@@ -1,12 +1,12 @@
 {
   "name": "protype",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Determine type of property.",
   "main": "protype.js",
   "authors": [
     "Richeve S. Bebedor <richeve.bebedor@gmail.com>"
   ],
-  "license": "ISC",
+  "license": "MIT",
   "keywords": [
     "typeof",
     "property",
@@ -28,7 +28,7 @@
     "tests"
   ],
   "dependencies": {
-    "harden": "^0.5.0",
-    "cemento": "*"
+    "cemento": "^0.1.0",
+    "harden": "^0.6.0"
   }
 }

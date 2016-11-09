@@ -1,6 +1,6 @@
 {
   "name": "protype",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Determine type of property.",
   "main": "protype.js",
   "scripts": {
@@ -23,13 +23,13 @@
     "protype"
   ],
   "author": "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/volkovasystems/protype/issues"
   },
   "homepage": "https://github.com/volkovasystems/protype#readme",
   "dependencies": {
-    "cemento": "0.0.0",
-    "harden": "^0.5.0"
+    "cemento": "^0.1.0",
+    "harden": "^0.6.0"
   }
 }

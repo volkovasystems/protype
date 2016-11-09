@@ -74,7 +74,7 @@ harden( "OBJECT", "object" );
 harden( "UNDEFINED", "undefined" );
 harden( "SYMBOL", "symbol" );
 
-this.protype = function protype( property, type ){
+var protype = function protype( property, type ){
 	/*;
 		@meta-configuration:
 			{
@@ -123,5 +123,5 @@ this.protype = function protype( property, type ){
 };
 
 if( typeof module != "undefined" && typeof module.exports != "undefined" ){
-	module.exports = this.protype;
+	module.exports = protype;
 }
