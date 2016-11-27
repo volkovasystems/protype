@@ -1,6 +1,6 @@
 {
   "name": "protype",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Determine type of property.",
   "main": "protype.js",
   "scripts": {
@@ -29,7 +29,7 @@
   },
   "homepage": "https://github.com/volkovasystems/protype#readme",
   "dependencies": {
-    "cemento": "^0.2.0",
+    "cemento": "^0.3.0",
     "harden": "^0.7.0"
   }
 }
