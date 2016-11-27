@@ -53,18 +53,8 @@
 	@end-include
 */
 
-if( typeof require == "function" ){
-	var cemento = require( "cemento" );
-	var harden = require( "harden" );
-}
-
-if( typeof window != "undefined" && !( "cemento" in window ) ){
-	throw new Error( "cemento is not defined" );
-}
-
-if( typeof window != "undefined" && !( "harden" in window ) ){
-	throw new Error( "harden is not defined" );
-}
+const cemento = require( "cemento" );
+const harden = require( "harden" );
 
 harden( "STRING", "string" );
 harden( "NUMBER", "number" );
@@ -74,7 +64,7 @@ harden( "OBJECT", "object" );
 harden( "UNDEFINED", "undefined" );
 harden( "SYMBOL", "symbol" );
 
-var protype = function protype( property, type ){
+const protype = function protype( property, type ){
 	/*;
 		@meta-configuration:
 			{
@@ -122,6 +112,4 @@ var protype = function protype( property, type ){
 	}
 };
 
-if( typeof module != "undefined" && typeof module.exports != "undefined" ){
-	module.exports = protype;
-}
+module.exports = protype;
