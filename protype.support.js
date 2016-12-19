@@ -56,62 +56,58 @@
 	@end-include
 */
 
-const cemento = require( "cemento" );
-const harden = require( "harden" );
+var _typeof2 = require("babel-runtime/helpers/typeof");
 
-harden( "STRING", "string" );
-harden( "NUMBER", "number" );
-harden( "BOOLEAN", "boolean" );
-harden( "FUNCTION", "function" );
-harden( "OBJECT", "object" );
-harden( "UNDEFINED", "undefined" );
-harden( "SYMBOL", "symbol" );
+var _typeof3 = _interopRequireDefault(_typeof2);
 
-const protype = function protype( property, type ){
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var cemento = require("cemento");
+var harden = require("harden");
+
+harden("STRING", "string");
+harden("NUMBER", "number");
+harden("BOOLEAN", "boolean");
+harden("FUNCTION", "function");
+harden("OBJECT", "object");
+harden("UNDEFINED", "undefined");
+harden("SYMBOL", "symbol");
+
+var protype = function protype(property, type) {
 	/*;
-		@meta-configuration:
-			{
-				"property:required": "*",
-				"type": [
-					STRING,
-					NUMBER,
-					BOOLEAN,
-					FUNCTION,
-					OBJECT,
-					UNDEFINED,
-					SYMBOL
-				]
-			}
-		@end-meta-configuration
-	*/
+ 	@meta-configuration:
+ 		{
+ 			"property:required": "*",
+ 			"type": [
+ 				STRING,
+ 				NUMBER,
+ 				BOOLEAN,
+ 				FUNCTION,
+ 				OBJECT,
+ 				UNDEFINED,
+ 				SYMBOL
+ 			]
+ 		}
+ 	@end-meta-configuration
+ */
 
-	if( type &&
-		typeof type == "string" &&
-		type != STRING &&
-		type != NUMBER &&
-		type != BOOLEAN &&
-		type != FUNCTION &&
-		type != OBJECT &&
-		type != UNDEFINED &&
-		type != SYMBOL )
-	{
-		throw new Error( "invalid type" );
+	if (type && typeof type == "string" && type != STRING && type != NUMBER && type != BOOLEAN && type != FUNCTION && type != OBJECT && type != UNDEFINED && type != SYMBOL) {
+		throw new Error("invalid type");
 	}
 
-	if( type ){
-		return ( typeof property == type );
-
-	}else{
-		return cemento( {
-			"STRING": protype( property, STRING ),
-			"NUMBER": protype( property, NUMBER ),
-			"BOOLEAN": protype( property, BOOLEAN ),
-			"FUNCTION": protype( property, FUNCTION ),
-			"OBJECT": protype( property, OBJECT ),
-			"UNDEFINED": protype( property, UNDEFINED ),
-			"SYMBOL": protype( property, SYMBOL ),
-			"type": ( typeof property )
-		} );
+	if (type) {
+		return (typeof property === "undefined" ? "undefined" : (0, _typeof3.default)(property)) == type;
+	} else {
+		return cemento({
+			"STRING": protype(property, STRING),
+			"NUMBER": protype(property, NUMBER),
+			"BOOLEAN": protype(property, BOOLEAN),
+			"FUNCTION": protype(property, FUNCTION),
+			"OBJECT": protype(property, OBJECT),
+			"UNDEFINED": protype(property, UNDEFINED),
+			"SYMBOL": protype(property, SYMBOL),
+			"type": typeof property === "undefined" ? "undefined" : (0, _typeof3.default)(property)
+		});
 	}
 };
 

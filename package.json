@@ -1,10 +1,13 @@
 {
   "name": "protype",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "Determine type of property.",
   "main": "protype.js",
+  "support": "protype.support.js",
+  "deploy": "protype.deploy.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel protype.js -o protype.support.js && webpack",
+    "test": "mocha protype-test.js"
   },
   "repository": {
     "type": "git",
@@ -23,13 +26,24 @@
     "protype"
   ],
   "author": "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+  "contributors": [
+    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/volkovasystems/protype/issues"
   },
   "homepage": "https://github.com/volkovasystems/protype#readme",
   "dependencies": {
-    "cemento": "^0.3.0",
-    "harden": "^0.7.0"
+    "babel-runtime": "^6.20.0",
+    "cemento": "^0.4.0",
+    "harden": "^0.12.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.21.0",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-preset-latest": "^6.16.0",
+    "webpack": "^1.14.0"
   }
 }
