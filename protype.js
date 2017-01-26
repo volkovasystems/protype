@@ -144,6 +144,14 @@ const protype = function protype( property, type ){
 	}
 
 	if( type ){
+		if( arguments.length == 2 ){
+			if( typeof type != "string" ){
+				throw new Error( "invalid type" );
+			}
+
+			return typeof property == type;
+		}
+
 		let flatten = function flatten( current ){
 			return current.reduce( ( previous, current ) => {
 				let element = Array.isArray( current )? flatten( current ) : current;

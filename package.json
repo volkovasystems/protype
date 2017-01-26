@@ -1,6 +1,6 @@
 {
   "name": "protype",
-  "version": "0.9.0",
+  "version": "0.10.0",
   "description": "Determine type of property.",
   "main": "protype.js",
   "support": "protype.support.js",
