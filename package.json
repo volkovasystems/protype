@@ -1,6 +1,6 @@
 {
   "name": "protype",
-  "version": "0.10.0",
+  "version": "0.11.0",
   "description": "Determine type of property.",
   "main": "protype.js",
   "support": "protype.support.js",
@@ -36,8 +36,8 @@
   "homepage": "https://github.com/volkovasystems/protype#readme",
   "dependencies": {
     "babel-runtime": "^6.22.0",
-    "cemento": "^0.6.0",
-    "harden": "^0.13.0"
+    "cemento": "^0.7.0",
+    "harden": "^0.14.0"
   },
   "devDependencies": {
     "babel-cli": "^6.22.2",
