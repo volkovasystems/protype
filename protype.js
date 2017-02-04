@@ -86,7 +86,7 @@ const TYPE_LIST = [
 	@note:
 		This will let us determine if we can match using AND condition.
 
-		Since a value cannot be of both type, this will be used for negated evaluation.
+		Since a value cannot be of both type, this will be used for reversed negated evaluation.
 	@end-note
 */
 const STRICT_TYPE_PATTERN = new RegExp( `^(${ TYPE_LIST.join( "|" ) }){2,}$` );
@@ -120,10 +120,10 @@ const protype = function protype( property, type ){
 		if( type.length > 1 ){
 			/*;
 				@note:
-					This is a negated feature.
+					This is a reversed negated feature.
 				@end-note
 			*/
-			return type.every( ( type ) => { return ( typeof property != type ); } );
+			return !type.every( ( type ) => { return ( typeof property != type ); } );
 
 		}else{
 			throw new Error( "invalid type" );
