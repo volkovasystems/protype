@@ -6,4 +6,5 @@ console.log( protype( "hello", STRING ) );
 
 console.log( protype( false, STRING, "yeah", BOOLEAN ) );
 
-console.log( protype( "false", STRING + NUMBER + BOOLEAN ) );
+console.log( protype( true, STRING + NUMBER ) );
+console.log( protype( true, STRING + NUMBER + BOOLEAN ) );

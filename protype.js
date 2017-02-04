@@ -118,7 +118,12 @@ const protype = function protype( property, type ){
 		type = type.match( TYPE_PATTERN );
 
 		if( type.length > 1 ){
-			return type.every( ( type ) => { return ( typeof property == type ); } );
+			/*;
+				@note:
+					This is a negated feature.
+				@end-note
+			*/
+			return type.every( ( type ) => { return ( typeof property != type ); } );
 
 		}else{
 			throw new Error( "invalid type" );
