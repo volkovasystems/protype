@@ -48,6 +48,9 @@
 		Determine type of property.
 
 		Passing multiple type will do try to match any one of it.
+
+		Passing appended type will do negated evaluation.
+			It should not pass all type given.
 	@end-module-documentation
 
 	@include:
@@ -61,46 +64,6 @@
 const cemento = require( "cemento" );
 const harden = require( "harden" );
 
-//: @support-module:
-	//: @reference: https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/isArray
-	Array.isArray||(Array.isArray=function(r){return"[object Array]"===Object.prototype.toString.call(r)});
-//: @end-support-module
-
-//: @support-module:
-	//: @reference: https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/from
-	Array.from||(Array.from=function(){var r=Object.prototype.toString,n=function(n){
-	return"function"==typeof n||"[object Function]"===r.call(n)},t=function(r){var n=Number(r);
-	return isNaN(n)?0:0!==n&&isFinite(n)?(n>0?1:-1)*Math.floor(Math.abs(n)):n},
-	e=Math.pow(2,53)-1,o=function(r){var n=t(r);return Math.min(Math.max(n,0),e)};
-	return function(r){var t=this,e=Object(r);
-	if(null==r)throw new TypeError("Array.from requires an array-like object - not null or undefined");
-	var a,u=arguments.length>1?arguments[1]:void 0;if("undefined"!=typeof u){
-	if(!n(u))throw new TypeError("Array.from: when provided, the second argument must be a function");
-	arguments.length>2&&(a=arguments[2])}for(var i,f=o(e.length),c=n(t)?
-	Object(new t(f)):new Array(f),h=0;f>h;)i=e[h],
-	u?c[h]="undefined"==typeof a?u(i,h):u.call(a,i,h):c[h]=i,h+=1;return c.length=f,c}}());
-//: @end-support-module
-
-//; @support-module:
-	//: @reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some
-	Array.prototype.some=Array.prototype.some||function(evaluator,thisArg){"use strict";
-	if(!this)throw new TypeError("Array.prototype.some called on null or undefined");
-	if("function"!=typeof evaluator){if("string"!=typeof evaluator)throw new TypeError;
-	if(!(evaluator=eval(evaluator)))throw new TypeError}var i;
-	if(void 0===thisArg){for(i in this)if(evaluator(this[i],i,this))return!0;return!1}
-	for(i in this)if(evaluator.call(thisArg,this[i],i,this))return!0;return!1};
-//; @end-support-module
-
-//: @support-module:
-	//: @reference: https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce
-	Array.prototype.reduce||(Array.prototype.reduce=function(r){"use strict";
-	if(null==this)throw new TypeError("Array.prototype.reduce called on null or undefined");
-	if("function"!=typeof r)throw new TypeError(r+" is not a function");
-	var e,t=Object(this),n=t.length>>>0,o=0;if(2==arguments.length)e=arguments[1];
-	else{for(;n>o&&!(o in t);)o++;if(o>=n)throw new TypeError("Reduce of empty array with no initial value");
-	e=t[o++]}for(;n>o;o++)o in t&&(e=r(e,t[o],o,t));return e});
-//: @end-support-module
-
 harden( "STRING", "string" );
 harden( "NUMBER", "number" );
 harden( "BOOLEAN", "boolean" );
@@ -108,6 +71,27 @@ harden( "FUNCTION", "function" );
 harden( "OBJECT", "object" );
 harden( "UNDEFINED", "undefined" );
 harden( "SYMBOL", "symbol" );
+
+const TYPE_LIST = [
+	STRING,
+	NUMBER,
+	BOOLEAN,
+	FUNCTION,
+	OBJECT,
+	UNDEFINED,
+	SYMBOL
+];
+
+/*;
+	@note:
+		This will let us determine if we can match using AND condition.
+
+		Since a value cannot be of both type, this will be used for negated evaluation.
+	@end-note
+*/
+const STRICT_TYPE_PATTERN = new RegExp( `^(${ TYPE_LIST.join( "|" ) }){2,}$` );
+
+const TYPE_PATTERN = new RegExp( `(${ TYPE_LIST.join( "|" ) })(?!.*\\1)`, "g" );
 
 const protype = function protype( property, type ){
 	/*;
@@ -129,6 +113,17 @@ const protype = function protype( property, type ){
 			}
 		@end-meta-configuration
 	*/
+
+	if( type && typeof type == "string" && STRICT_TYPE_PATTERN.test( type ) ){
+		type = type.match( TYPE_PATTERN );
+
+		if( type.length > 1 ){
+			return type.every( ( type ) => { return ( typeof property == type ); } );
+
+		}else{
+			throw new Error( "invalid type" );
+		}
+	}
 
 	if( type &&
 		typeof type == "string" &&
@@ -152,30 +147,11 @@ const protype = function protype( property, type ){
 			return typeof property == type;
 		}
 
-		let flatten = function flatten( current ){
-			return current.reduce( ( previous, current ) => {
-				let element = Array.isArray( current )? flatten( current ) : current;
-
-				return previous.concat( element );
-			}, [ ] );
-		};
-
-		return Array.from( arguments ).splice( 1 )
-			.reduce( ( previous, current ) => {
-				let element = Array.isArray( current )? flatten( current ) : current;
-
-				return previous.concat( element );
-			}, [ ] )
-			.filter( ( type ) => { return ( typeof type == STRING ); } )
-			.filter( ( type ) => {
-				return ( type == STRING ||
-					type == NUMBER ||
-					type == BOOLEAN ||
-					type == FUNCTION ||
-					type == OBJECT ||
-					type == UNDEFINED ||
-					type == SYMBOL );
-			} )
+		return Array.from( arguments )
+			.splice( 1 )
+			.join( "" )
+			.replace( /\[|\]|\s+|\,/g, "" )
+			.match( TYPE_PATTERN )
 			.some( ( type ) => { return ( typeof property == type ); } );
 
 	}else{
