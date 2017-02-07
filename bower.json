@@ -1,6 +1,6 @@
 {
   "name": "protype",
-  "version": "0.14.0",
+  "version": "0.15.0",
   "description": "Determine type of property.",
   "main": "protype.deploy.js",
   "authors": [
@@ -29,7 +29,7 @@
     "tests"
   ],
   "dependencies": {
-    "cemento": "^0.7.0",
+    "cemento": "^0.8.0",
     "harden": "^0.14.0"
   }
 }

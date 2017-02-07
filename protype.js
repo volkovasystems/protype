@@ -130,15 +130,14 @@ const protype = function protype( property, type ){
 		}
 	}
 
-	if( type &&
-		typeof type == "string" &&
-		type != STRING &&
-		type != NUMBER &&
-		type != BOOLEAN &&
-		type != FUNCTION &&
-		type != OBJECT &&
-		type != UNDEFINED &&
-		type != SYMBOL )
+	if( arguments.length > 1 &&
+		type !== STRING &&
+		type !== NUMBER &&
+		type !== BOOLEAN &&
+		type !== FUNCTION &&
+		type !== OBJECT &&
+		type !== UNDEFINED &&
+		type !== SYMBOL )
 	{
 		throw new Error( "invalid type" );
 	}
@@ -161,13 +160,13 @@ const protype = function protype( property, type ){
 
 	}else{
 		return cemento( {
-			"STRING": protype( property, STRING ),
-			"NUMBER": protype( property, NUMBER ),
-			"BOOLEAN": protype( property, BOOLEAN ),
-			"FUNCTION": protype( property, FUNCTION ),
-			"OBJECT": protype( property, OBJECT ),
-			"UNDEFINED": protype( property, UNDEFINED ),
-			"SYMBOL": protype( property, SYMBOL ),
+			"STRING": ( typeof property == STRING ),
+			"NUMBER": ( typeof property == NUMBER ),
+			"BOOLEAN": ( typeof property == BOOLEAN ),
+			"FUNCTION": ( typeof property == FUNCTION ),
+			"OBJECT": ( typeof property == OBJECT ),
+			"UNDEFINED": ( typeof property == UNDEFINED ),
+			"SYMBOL": ( typeof property == SYMBOL ),
 			"type": ( typeof property )
 		} );
 	}
