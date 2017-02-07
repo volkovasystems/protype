@@ -29,5 +29,7 @@
     "tests"
   ],
   "dependencies": {
+    "cemento": "^0.8.0",
+    "harden": "^0.14.0"
   }
 }
