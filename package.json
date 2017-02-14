@@ -37,8 +37,8 @@
   "homepage": "https://github.com/volkovasystems/protype#readme",
   "dependencies": {
     "babel-runtime": "^6.22.0",
-    "cemento": "^0.8.0",
-    "harden": "^0.14.0"
+    "cemento": "^0.9.0",
+    "harden": "^0.15.0"
   },
   "devDependencies": {
     "babel-cli": "^6.23.0",
