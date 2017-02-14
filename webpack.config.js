@@ -7,7 +7,6 @@ module.exports = {
 	"entry": "./protype.support.js",
 	"resolve": {
 		"descriptionFiles": [
-			".bower.json",
 			"bower.json",
 			"package.json"
 		],
@@ -22,15 +21,15 @@ module.exports = {
 			"main"
 		]
 	},
-	"module": {
-		"rules": [
-			{
-				"enforce": "pre",
-				"test": /\.support\.js$/,
-				"loader": "source-map-loader"
-			}
-		]
-	},
+	// "module": {
+	// 	"rules": [
+	// 		{
+	// 			"enforce": "pre",
+	// 			"test": /\.support\.js$/,
+	// 			"loader": "source-map-loader"
+	// 		}
+	// 	]
+	// },
 	"output": {
 		"library": "protype",
 		"libraryTarget": "umd",
@@ -48,5 +47,5 @@ module.exports = {
 			"mangle": false
 		} )
 	],
-	"devtool": "#inline-source-map"
+	"devtool": "#cheap-module-inline-source-map"
 };
