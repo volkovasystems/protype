@@ -14,4 +14,5 @@ webpack \
 bower install \
 cemento \
 harden \
---save
+--save \
+--force-latest

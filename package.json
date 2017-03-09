@@ -1,13 +1,13 @@
 {
   "name": "protype",
-  "version": "0.18.0",
+  "version": "0.19.0",
   "description": "Determine type of property.",
   "main": "protype.js",
   "support": "protype.support.js",
   "deploy": "protype.deploy.js",
   "browser": "protype.deploy.js",
   "scripts": {
-    "build": "babel protype.js --out-file protype.support.js --source-maps && webpack --progress",
+    "build": "babel protype.js --out-file protype.support.js --source-maps && webpack --progress --display-modules",
     "test": "mocha protype-test.js"
   },
   "repository": {
@@ -37,7 +37,7 @@
   "homepage": "https://github.com/volkovasystems/protype#readme",
   "dependencies": {
     "babel-runtime": "^6.23.0",
-    "cemento": "^0.12.0",
+    "cemento": "^0.13.0",
     "harden": "^0.17.0"
   },
   "devDependencies": {
