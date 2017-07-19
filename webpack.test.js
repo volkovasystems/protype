@@ -2,9 +2,10 @@
 
 const webpack = require( "webpack" );
 const UglifyJsPlugin = webpack.optimize.UglifyJsPlugin;
+const ModuleConcatenationPlugin = webpack.optimize.ModuleConcatenationPlugin;
 
 module.exports = {
-	"entry": "./protype.support.js",
+	"entry": "./test.support.js",
 	"resolve": {
 		"descriptionFiles": [
 			"bower.json",
@@ -31,20 +32,26 @@ module.exports = {
 		]
 	},
 	"output": {
-		"library": "protype",
+		"library": "test",
 		"libraryTarget": "umd",
-		"filename": "protype.deploy.js"
+		"filename": "test.deploy.js"
 	},
 	"plugins": [
+		new ModuleConcatenationPlugin( ),
+
 		new UglifyJsPlugin( {
 			"compress": {
 				"keep_fargs": true,
 				"keep_fnames": true,
-				"warnings": false
+				"keep_infinity": true,
+				"warnings": false,
+				"passes": 3
+			},
+			"mangle": {
+				"keep_fnames": true
 			},
 			"comments": false,
-			"sourceMap": true,
-			"mangle": false
+			"sourceMap": true
 		} )
 	],
 	"devtool": "#source-map"
