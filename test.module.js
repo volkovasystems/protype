@@ -320,3 +320,26 @@ describe( "protype", ( ) => {
 } );
 
 //: @end-client
+
+
+//: @bridge:
+//let result = browser.url( bridgeURL ).execute( ( ) => <test> );
+//assert.equal( result.value, <expected> );
+describe( "protype", ( ) => {
+
+	let directory = __dirname;
+	let testBridge = path.resolve( directory, "bridge.html" );
+	let bridgeURL = `file://${ testBridge }`;
+
+	describe( "`protype( undefined, UNDEFINED )`", ( ) => {
+		it( "should return true", ( ) => {
+
+			let result = browser.url( bridgeURL ).execute( ( ) => protype( undefined, UNDEFINED ) );
+			assert.equal( result.value, true );
+
+		} );
+	} );
+
+} );
+
+//: @end-bridge
