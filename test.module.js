@@ -323,8 +323,7 @@ describe( "protype", ( ) => {
 
 
 //: @bridge:
-//let result = browser.url( bridgeURL ).execute( ( ) => <test> );
-//assert.equal( result.value, <expected> );
+
 describe( "protype", ( ) => {
 
 	let directory = __dirname;
@@ -336,6 +335,125 @@ describe( "protype", ( ) => {
 
 			let result = browser.url( bridgeURL ).execute( ( ) => protype( undefined, UNDEFINED ) );
 			assert.equal( result.value, true );
+
+		} );
+	} );
+
+	describe( "`protype( NaN, NUMBER )`", ( ) => {
+		it( "should return true", ( ) => {
+
+			let result = browser.url( bridgeURL ).execute( ( ) => protype( NaN, NUMBER ) );
+			assert.equal( result.value, true );
+
+		} );
+	} );
+
+
+	describe( "`protype( '', NUMBER + STRING )`", ( ) => {
+		it( "should return true", ( ) => {
+
+			let result = browser.url( bridgeURL ).execute( ( ) => protype( "", NUMBER + STRING ) );
+			assert.equal( result.value, true );
+
+		} );
+	} );
+
+
+	describe( "`protype( 'hello', STRING )`", ( ) => {
+		it( "should return true", ( ) => {
+
+			let result = browser.url( bridgeURL ).execute( ( ) => protype( "hello", STRING ) );
+			assert.equal( result.value, true );
+
+		} );
+	} );
+
+
+	describe( "`protype( false, STRING, 'yeah', BOOLEAN )`", ( ) => {
+		it( "should return true", ( ) => {
+
+			let result = browser.url( bridgeURL ).execute( ( ) => protype( false, STRING, "yeah", BOOLEAN ) );
+			assert.equal( result.value, true );
+
+		} );
+	} );
+
+
+	describe( "`protype( true, STRING + NUMBER + BOOLEAN )`", ( ) => {
+		it( "should return true", ( ) => {
+
+			let result = browser.url( bridgeURL ).execute( ( ) => protype( true, STRING + NUMBER + BOOLEAN ) );
+			assert.equal( result.value, true );
+
+		} );
+	} );
+
+
+	describe( "`protype( 123, NUMBER )`", ( ) => {
+		it( "should return true", ( ) => {
+
+			let result = browser.url( bridgeURL ).execute( ( ) => protype( 123, NUMBER ) );
+			assert.equal( result.value, true );
+
+		} );
+	} );
+
+
+	describe( "`protype( function hello( ){ }, FUNCTION )`", ( ) => {
+		it( "should return true", ( ) => {
+
+			let result = browser.url( bridgeURL ).execute( ( ) => protype( function hello( ){ }, FUNCTION ) );
+			assert.equal( result.value, true );
+
+		} );
+	} );
+
+
+	describe( "`protype( Symbol.for( 'hello' ), SYMBOL )`", ( ) => {
+		it( "should return true", ( ) => {
+
+			let result = browser.url( bridgeURL ).execute( ( ) => protype( Symbol.for( "hello" ), SYMBOL ) );
+			assert.equal( result.value, true );
+
+		} );
+	} );
+
+
+	describe( "`protype( null, OBJECT )`", ( ) => {
+		it( "should return true", ( ) => {
+
+			let result = browser.url( bridgeURL ).execute( ( ) => protype( null, OBJECT ) );
+			assert.equal( result.value, true );
+
+		} );
+	} );
+
+
+	describe( "`protype( [ ], OBJECT )`", ( ) => {
+		it( "should return true", ( ) => {
+
+			let result = browser.url( bridgeURL ).execute( ( ) => protype( [ ], OBJECT ) );
+			assert.equal( result.value, true );
+
+		} );
+	} );
+
+
+	describe( "`protype( null, UNDEFINED )`", ( ) => {
+		it( "should return false", ( ) => {
+
+			let result = browser.url( bridgeURL ).execute( ( ) => protype( null, UNDEFINED ) );
+			assert.equal( result.value, false );
+
+		} );
+	} );
+
+
+	describe( "`protype( true, STRING + NUMBER + OBJECT )`", ( ) => {
+		it( "should return false", ( ) => {
+
+			let result = browser.url( bridgeURL ).execute( ( ) => protype( true, STRING + NUMBER + OBJECT ) );
+			assert.equal( result.value, false );
 
 		} );
 	} );
