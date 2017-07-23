@@ -1,58 +1,26 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>protype unit test</title>
+		<meta charset="utf-8">
 
-		<link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.3.2.css">
+		<title>test:protype</title>
 
-		<script type="application/javascript" src="https://code.jquery.com/qunit/qunit-2.3.2.js"></script>
-
-		<script type="application/javascript" src="./protype.deploy.js"></script>
+		<link rel="stylesheet" href="https://unpkg.com/mocha/mocha.css"/>
 	</head>
 
 	<body>
-		<div id="qunit"></div>
+		<div id="mocha"></div>
 
-		<div id="qunit-fixture"></div>
+		<script type="application/javascript" src="https://unpkg.com/mocha/mocha.js"></script>
 
 		<script type="application/javascript">
-			QUnit.test( "protype unit test", function( assert ) {
+			mocha.setup( "bdd" );
+		</script>
 
-				assert.equal( protype( undefined, UNDEFINED ), true, "should be true" );
+		<script type="application/javascript" src="./test.deploy.js"></script>
 
-				assert.equal( protype( 0, NUMBER ), true, "should be true" );
-
-				assert.equal( protype( NaN, NUMBER ), true, "should be true" );
-
-				assert.equal( protype( "", STRING ), true, "should be true" );
-
-				assert.equal( protype( "", NUMBER + STRING ), true, "should be true" );
-
-				assert.equal( protype( "hello", STRING ), true, "should be true" );
-
-				assert.equal( protype( false, STRING, "yeah", BOOLEAN ), true, "should be true" );
-
-				assert.equal( protype( true, STRING + NUMBER + BOOLEAN ), true, "should be true" );
-
-				assert.equal( protype( 123, NUMBER ), true, "should be true" );
-
-				assert.equal( protype( function hello( ){ }, FUNCTION ), true, "should be true" );
-
-				assert.equal( protype( Symbol.for( "hello" ), SYMBOL ), true, "should be true" );
-
-				assert.equal( protype( null, OBJECT ), true, "should be true" );
-
-				let test1 = protype( { } );
-
-				assert.equal( test1[ "OBJECT" ], true, "should be true" );
-
-				assert.equal( protype( [ ], OBJECT ), true, "should be true" );
-
-				assert.equal( protype( null, UNDEFINED ), false, "should be false" );
-
-				assert.equal( protype( true, STRING + NUMBER + OBJECT ), false, "should be false" );
-
-			} );
+		<script type="application/javascript">
+			mocha.run( );
 		</script>
 	</body>
 </html>
