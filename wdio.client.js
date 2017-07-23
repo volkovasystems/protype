@@ -9,18 +9,19 @@ exports.config = {
 					"disable-gpu",
 					"headless"
 				]
-			}
+			},
+			"proxy": null
 		}
 	],
 	"sync": true,
-	"logLevel": "silent",
+	"logLevel": "verbose",
 	"coloredLogs": true,
 	"bail": 0,
-	"screenshotPath": "./waste",
+	"screenshotPath": "./",
 	"baseUrl": "http://localhost",
-	"waitforTimeout": 10000,
-	"connectionRetryTimeout": 90000,
-	"connectionRetryCount": 3,
+	"waitforTimeout": 1000,
+	"connectionRetryTimeout": 1000,
+	"connectionRetryCount": 10,
 	"services": [ "selenium-standalone" ],
 	"framework": "mocha",
 	"reporters": [ "json" ],
