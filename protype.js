@@ -91,7 +91,6 @@ const TYPE_LIST = [
 	@end-note
 */
 const STRICT_TYPE_PATTERN = new RegExp( `^(${ TYPE_LIST.join( "|" ) }){2,}$` );
-
 const TYPE_PATTERN = new RegExp( `(${ TYPE_LIST.join( "|" ) })(?!.*\\1)`, "g" );
 
 const protype = function protype( property, type ){
@@ -115,8 +114,12 @@ const protype = function protype( property, type ){
 		@end-meta-configuration
 	*/
 
-	if( type && typeof type == "string" && STRICT_TYPE_PATTERN.test( type ) ){
-		type = type.match( TYPE_PATTERN );
+	if(
+		type != ""
+		&& typeof type == "string"
+		&& STRICT_TYPE_PATTERN.test( type )
+	){
+		type = type.match( TYPE_PATTERN ) || [ ];
 
 		if( type.length > 1 ){
 			/*;
@@ -124,40 +127,42 @@ const protype = function protype( property, type ){
 					This is a reversed negated feature.
 				@end-note
 			*/
-			return !type.every( ( type ) => { return ( typeof property != type ); } );
+			return !type.every( ( type ) => ( typeof property != type ) );
 
 		}else{
-			throw new Error( "invalid type" );
+			return false;
 		}
 	}
 
-	if( arguments.length > 1 &&
-		type !== STRING &&
-		type !== NUMBER &&
-		type !== BOOLEAN &&
-		type !== FUNCTION &&
-		type !== OBJECT &&
-		type !== UNDEFINED &&
-		type !== SYMBOL )
-	{
-		throw new Error( "invalid type" );
+	if(
+		arguments.length > 1
+		&& type !== STRING
+		&& type !== NUMBER
+		&& type !== BOOLEAN
+		&& type !== FUNCTION
+		&& type !== OBJECT
+		&& type !== UNDEFINED
+		&& type !== SYMBOL
+	){
+		return false;
 	}
 
 	if( type ){
 		if( arguments.length == 2 ){
 			if( typeof type != "string" ){
-				throw new Error( "invalid type" );
+				return false;
 			}
 
 			return typeof property == type;
 		}
 
-		return Array.from( arguments )
-			.splice( 1 )
-			.join( "" )
-			.replace( /\[|\]|\s+|\,/g, "" )
-			.match( TYPE_PATTERN )
-			.some( ( type ) => { return ( typeof property == type ); } );
+		return (
+			( Array.from( arguments )
+				.splice( 1 ).join( "" )
+				.replace( /\[|\]|\s+|\,/g, "" )
+				.match( TYPE_PATTERN ) || [ ] )
+				.some( ( type ) => ( typeof property == type ) )
+		);
 
 	}else{
 		return cemento( {
