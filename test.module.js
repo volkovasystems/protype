@@ -409,6 +409,16 @@ describe( "protype", ( ) => {
 	} );
 
 
+	describe( "`protype( Symbol.for( 'hello' ), SYMBOL )`", ( ) => {
+		it( "should return true", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute( ( ) => protype( Symbol( "hello" ), SYMBOL ) );
+			assert.equal( result.value, true );
+			//: @end-ignore
+		} );
+	} );
+
+
 	describe( "`protype( null, OBJECT )`", ( ) => {
 		it( "should return true", ( ) => {
 
@@ -448,21 +458,6 @@ describe( "protype", ( ) => {
 		} );
 	} );
 
-	/* @note
-
-		Do not change or delete because the following are failing test due to build error
-
-	describe( "`protype( Symbol( 'hello' ), SYMBOL )`", ( ) => {
-		it( "should return true", ( ) => {
-
-			let result = browser.url( bridgeURL ).execute( ( ) => protype( Symbol( "hello" ), SYMBOL ) );
-			assert.equal( result.value, true );
-
-		} );
-	} );
-
-	*/
-	
 } );
 
 //: @end-bridge
