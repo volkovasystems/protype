@@ -326,9 +326,7 @@ describe( "protype", ( ) => {
 
 describe( "protype", ( ) => {
 
-	let directory = __dirname;
-	let testBridge = path.resolve( directory, "bridge.html" );
-	let bridgeURL = `file://${ testBridge }`;
+	let bridgeURL = `file://${ path.resolve( __dirname, "bridge.html" ) }`;
 
 	describe( "`protype( undefined, UNDEFINED )`", ( ) => {
 		it( "should return true", ( ) => {
