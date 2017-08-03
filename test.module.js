@@ -339,6 +339,7 @@ describe( "protype", ( ) => {
 		} );
 	} );
 
+
 	describe( "`protype( NaN, NUMBER )`", ( ) => {
 		it( "should return true", ( ) => {
 
