@@ -23,7 +23,6 @@
 		"pretest": "npm run clear && npm run rebuild && npm run build:test",
 		"test": "npm run test:server && npm run test:client",
 		"posttest": "npm run formal",
-		"coverage": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- -R spec ./test.js",
 		"deploy": "npm run build && npm run build:test && npm run test:server && npm run test:client && npm run formal"
 	},
 	"repository": {
