@@ -72,7 +72,7 @@
 		"gulp-replace": "^0.6.1",
 		"gulp-sourcemaps": "^2.6.0",
 		"istanbul": "^0.4.5",
-		"mocha": "^3.4.2",
+		"mocha": "^3.5.0",
 		"should": "^11.2.1",
 		"source-map-loader": "^0.2.1",
 		"wdio-json-reporter": "^0.2.1",
