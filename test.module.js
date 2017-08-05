@@ -411,7 +411,7 @@ describe( "protype", ( ) => {
 	describe( "`protype( Symbol.for( 'hello' ), SYMBOL )`", ( ) => {
 		it( "should be equal to true", ( ) => {
 			//: @ignore:
-			let result = browser.url( bridgeURL ).execute( ( ) => protype( Symbol( "hello" ), SYMBOL ) );
+			let result = browser.url( bridgeURL ).execute( ( ) => protype( Symbol.for( "hello" ), SYMBOL ) );
 			assert.equal( result.value, true );
 			//: @end-ignore
 		} );
