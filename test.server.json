@@ -1,0 +1,200 @@
+{
+  "stats": {
+    "suites": 14,
+    "tests": 13,
+    "passes": 13,
+    "pending": 0,
+    "failures": 0,
+    "start": "2017-08-20T01:55:42.237Z",
+    "end": "2017-08-20T01:55:42.249Z",
+    "duration": 12
+  },
+  "tests": [
+    {
+      "title": "should be equal to true",
+      "fullTitle": "protype `protype( undefined, UNDEFINED )` should be equal to true",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to true",
+      "fullTitle": "protype `protype( NaN, NUMBER )` should be equal to true",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to true",
+      "fullTitle": "protype `protype( '', NUMBER + STRING )` should be equal to true",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to true",
+      "fullTitle": "protype `protype( 'hello', STRING )` should be equal to true",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to true",
+      "fullTitle": "protype `protype( false, STRING, 'yeah', BOOLEAN )` should be equal to true",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to true",
+      "fullTitle": "protype `protype( true, STRING + NUMBER + BOOLEAN )` should be equal to true",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to true",
+      "fullTitle": "protype `protype( 123, NUMBER )` should be equal to true",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to true",
+      "fullTitle": "protype `protype( function hello( ){ }, FUNCTION )` should be equal to true",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to true",
+      "fullTitle": "protype `protype( Symbol.for( 'hello' ), SYMBOL )` should be equal to true",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to true",
+      "fullTitle": "protype `protype( null, OBJECT )` should be equal to true",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to true",
+      "fullTitle": "protype `protype( [ ], OBJECT )` should be equal to true",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to false",
+      "fullTitle": "protype `protype( null, UNDEFINED )` should be equal to false",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to false",
+      "fullTitle": "protype `protype( true, STRING + NUMBER + OBJECT )` should be equal to false",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ],
+  "pending": [],
+  "failures": [],
+  "passes": [
+    {
+      "title": "should be equal to true",
+      "fullTitle": "protype `protype( undefined, UNDEFINED )` should be equal to true",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to true",
+      "fullTitle": "protype `protype( NaN, NUMBER )` should be equal to true",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to true",
+      "fullTitle": "protype `protype( '', NUMBER + STRING )` should be equal to true",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to true",
+      "fullTitle": "protype `protype( 'hello', STRING )` should be equal to true",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to true",
+      "fullTitle": "protype `protype( false, STRING, 'yeah', BOOLEAN )` should be equal to true",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to true",
+      "fullTitle": "protype `protype( true, STRING + NUMBER + BOOLEAN )` should be equal to true",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to true",
+      "fullTitle": "protype `protype( 123, NUMBER )` should be equal to true",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to true",
+      "fullTitle": "protype `protype( function hello( ){ }, FUNCTION )` should be equal to true",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to true",
+      "fullTitle": "protype `protype( Symbol.for( 'hello' ), SYMBOL )` should be equal to true",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to true",
+      "fullTitle": "protype `protype( null, OBJECT )` should be equal to true",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to true",
+      "fullTitle": "protype `protype( [ ], OBJECT )` should be equal to true",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to false",
+      "fullTitle": "protype `protype( null, UNDEFINED )` should be equal to false",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be equal to false",
+      "fullTitle": "protype `protype( true, STRING + NUMBER + OBJECT )` should be equal to false",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ]
+}

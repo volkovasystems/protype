@@ -72,7 +72,7 @@ describe( "protype", ( ) => {
 
 
 	describe( "`protype( undefined, UNDEFINED )`", ( ) => {
-		it( "should return true", ( ) => {
+		it( "should be equal to true", ( ) => {
 
 			assert.equal( protype( undefined, UNDEFINED ), true );
 
@@ -81,7 +81,7 @@ describe( "protype", ( ) => {
 
 
 	describe( "`protype( NaN, NUMBER )`", ( ) => {
-		it( "should return true", ( ) => {
+		it( "should be equal to true", ( ) => {
 
 			assert.equal( protype( NaN, NUMBER ), true );
 
@@ -90,7 +90,7 @@ describe( "protype", ( ) => {
 
 
 	describe( "`protype( '', NUMBER + STRING )`", ( ) => {
-		it( "should return true", ( ) => {
+		it( "should be equal to true", ( ) => {
 
 			assert.equal( protype( "", NUMBER + STRING ), true );
 
@@ -99,7 +99,7 @@ describe( "protype", ( ) => {
 
 
 	describe( "`protype( 'hello', STRING )`", ( ) => {
-		it( "should return true", ( ) => {
+		it( "should be equal to true", ( ) => {
 
 			assert.equal( protype( "hello", STRING ), true );
 
@@ -108,7 +108,7 @@ describe( "protype", ( ) => {
 
 
 	describe( "`protype( false, STRING, 'yeah', BOOLEAN )`", ( ) => {
-		it( "should return true", ( ) => {
+		it( "should be equal to true", ( ) => {
 
 			assert.equal( protype( false, STRING, "yeah", BOOLEAN ), true );
 
@@ -117,7 +117,7 @@ describe( "protype", ( ) => {
 
 
 	describe( "`protype( true, STRING + NUMBER + BOOLEAN )`", ( ) => {
-		it( "should return true", ( ) => {
+		it( "should be equal to true", ( ) => {
 
 			assert.equal( protype( true, STRING + NUMBER + BOOLEAN ), true );
 
@@ -126,7 +126,7 @@ describe( "protype", ( ) => {
 
 
 	describe( "`protype( 123, NUMBER )`", ( ) => {
-		it( "should return true", ( ) => {
+		it( "should be equal to true", ( ) => {
 
 			assert.equal( protype( 123, NUMBER ), true );
 
@@ -135,7 +135,7 @@ describe( "protype", ( ) => {
 
 
 	describe( "`protype( function hello( ){ }, FUNCTION )`", ( ) => {
-		it( "should return true", ( ) => {
+		it( "should be equal to true", ( ) => {
 
 			assert.equal( protype( function hello( ){ }, FUNCTION ), true );
 
@@ -144,7 +144,7 @@ describe( "protype", ( ) => {
 
 
 	describe( "`protype( Symbol.for( 'hello' ), SYMBOL )`", ( ) => {
-		it( "should return true", ( ) => {
+		it( "should be equal to true", ( ) => {
 
 			assert.equal( protype( Symbol.for( "hello" ), SYMBOL ), true );
 
@@ -153,7 +153,7 @@ describe( "protype", ( ) => {
 
 
 	describe( "`protype( null, OBJECT )`", ( ) => {
-		it( "should return true", ( ) => {
+		it( "should be equal to true", ( ) => {
 
 			assert.equal( protype( null, OBJECT ), true );
 
@@ -162,7 +162,7 @@ describe( "protype", ( ) => {
 
 
 	describe( "`protype( [ ], OBJECT )`", ( ) => {
-		it( "should return true", ( ) => {
+		it( "should be equal to true", ( ) => {
 
 			assert.equal( protype( [ ], OBJECT ), true );
 
@@ -171,7 +171,7 @@ describe( "protype", ( ) => {
 
 
 	describe( "`protype( null, UNDEFINED )`", ( ) => {
-		it( "should return false", ( ) => {
+		it( "should be equal to false", ( ) => {
 
 			assert.equal( protype( null, UNDEFINED ), false );
 
@@ -180,7 +180,7 @@ describe( "protype", ( ) => {
 
 
 	describe( "`protype( true, STRING + NUMBER + OBJECT )`", ( ) => {
-		it( "should return false", ( ) => {
+		it( "should be equal to false", ( ) => {
 
 			assert.equal( protype( true, STRING + NUMBER + OBJECT ), false );
 
