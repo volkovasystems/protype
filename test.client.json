@@ -1,0 +1,468 @@
+{
+	"state": {
+		"passed": 13,
+		"failed": 0,
+		"skipped": 0
+	},
+	"start": "2017-08-22T04:03:28.717Z",
+	"end": "2017-08-22T04:04:07.036Z",
+	"capabilities": {
+		"browserName": "chrome",
+		"chromeOptions": {
+			"args": [
+				"disable-gpu",
+				"headless"
+			]
+		},
+		"proxy": null
+	},
+	"host": "127.0.0.1",
+	"port": 4444,
+	"baseUrl": "http://localhost",
+	"framework": "mocha",
+	"mochaOpts": {
+		"timeout": 10000,
+		"ui": "bdd"
+	},
+	"suites": [
+		{
+			"name": "protype",
+			"duration": 0,
+			"start": "2017-08-22T04:04:06.176Z",
+			"tests": [],
+			"hooks": []
+		},
+		{
+			"name": "protype",
+			"duration": 682,
+			"start": "2017-08-22T04:04:06.177Z",
+			"end": "2017-08-22T04:04:06.859Z",
+			"tests": [],
+			"hooks": [
+				{
+					"start": "2017-08-22T04:04:06.178Z",
+					"end": "2017-08-22T04:04:06.180Z",
+					"duration": 2,
+					"title": "\"before each\" hook",
+					"associatedSuite": "protype",
+					"associatedTest": "should be equal to true"
+				},
+				{
+					"start": "2017-08-22T04:04:06.279Z",
+					"end": "2017-08-22T04:04:06.279Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "protype",
+					"associatedTest": "should be equal to true"
+				},
+				{
+					"start": "2017-08-22T04:04:06.280Z",
+					"end": "2017-08-22T04:04:06.280Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "protype",
+					"associatedTest": "should be equal to true"
+				},
+				{
+					"start": "2017-08-22T04:04:06.324Z",
+					"end": "2017-08-22T04:04:06.325Z",
+					"duration": 1,
+					"title": "\"after each\" hook",
+					"associatedSuite": "protype",
+					"associatedTest": "should be equal to true"
+				},
+				{
+					"start": "2017-08-22T04:04:06.325Z",
+					"end": "2017-08-22T04:04:06.325Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "protype",
+					"associatedTest": "should be equal to true"
+				},
+				{
+					"start": "2017-08-22T04:04:06.370Z",
+					"end": "2017-08-22T04:04:06.370Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "protype",
+					"associatedTest": "should be equal to true"
+				},
+				{
+					"start": "2017-08-22T04:04:06.371Z",
+					"end": "2017-08-22T04:04:06.371Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "protype",
+					"associatedTest": "should be equal to true"
+				},
+				{
+					"start": "2017-08-22T04:04:06.413Z",
+					"end": "2017-08-22T04:04:06.413Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "protype",
+					"associatedTest": "should be equal to true"
+				},
+				{
+					"start": "2017-08-22T04:04:06.414Z",
+					"end": "2017-08-22T04:04:06.414Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "protype",
+					"associatedTest": "should be equal to true"
+				},
+				{
+					"start": "2017-08-22T04:04:06.451Z",
+					"end": "2017-08-22T04:04:06.451Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "protype",
+					"associatedTest": "should be equal to true"
+				},
+				{
+					"start": "2017-08-22T04:04:06.452Z",
+					"end": "2017-08-22T04:04:06.452Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "protype",
+					"associatedTest": "should be equal to true"
+				},
+				{
+					"start": "2017-08-22T04:04:06.494Z",
+					"end": "2017-08-22T04:04:06.495Z",
+					"duration": 1,
+					"title": "\"after each\" hook",
+					"associatedSuite": "protype",
+					"associatedTest": "should be equal to true"
+				},
+				{
+					"start": "2017-08-22T04:04:06.495Z",
+					"end": "2017-08-22T04:04:06.496Z",
+					"duration": 1,
+					"title": "\"before each\" hook",
+					"associatedSuite": "protype",
+					"associatedTest": "should be equal to true"
+				},
+				{
+					"start": "2017-08-22T04:04:06.534Z",
+					"end": "2017-08-22T04:04:06.534Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "protype",
+					"associatedTest": "should be equal to true"
+				},
+				{
+					"start": "2017-08-22T04:04:06.535Z",
+					"end": "2017-08-22T04:04:06.536Z",
+					"duration": 1,
+					"title": "\"before each\" hook",
+					"associatedSuite": "protype",
+					"associatedTest": "should be equal to true"
+				},
+				{
+					"start": "2017-08-22T04:04:06.574Z",
+					"end": "2017-08-22T04:04:06.574Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "protype",
+					"associatedTest": "should be equal to true"
+				},
+				{
+					"start": "2017-08-22T04:04:06.577Z",
+					"end": "2017-08-22T04:04:06.577Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "protype",
+					"associatedTest": "should be equal to true"
+				},
+				{
+					"start": "2017-08-22T04:04:06.631Z",
+					"end": "2017-08-22T04:04:06.631Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "protype",
+					"associatedTest": "should be equal to true"
+				},
+				{
+					"start": "2017-08-22T04:04:06.632Z",
+					"end": "2017-08-22T04:04:06.632Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "protype",
+					"associatedTest": "should be equal to true"
+				},
+				{
+					"start": "2017-08-22T04:04:06.675Z",
+					"end": "2017-08-22T04:04:06.675Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "protype",
+					"associatedTest": "should be equal to true"
+				},
+				{
+					"start": "2017-08-22T04:04:06.675Z",
+					"end": "2017-08-22T04:04:06.675Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "protype",
+					"associatedTest": "should be equal to true"
+				},
+				{
+					"start": "2017-08-22T04:04:06.728Z",
+					"end": "2017-08-22T04:04:06.728Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "protype",
+					"associatedTest": "should be equal to true"
+				},
+				{
+					"start": "2017-08-22T04:04:06.728Z",
+					"end": "2017-08-22T04:04:06.728Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "protype",
+					"associatedTest": "should be equal to false"
+				},
+				{
+					"start": "2017-08-22T04:04:06.775Z",
+					"end": "2017-08-22T04:04:06.775Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "protype",
+					"associatedTest": "should be equal to false"
+				},
+				{
+					"start": "2017-08-22T04:04:06.775Z",
+					"end": "2017-08-22T04:04:06.775Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "protype",
+					"associatedTest": "should be equal to false"
+				},
+				{
+					"start": "2017-08-22T04:04:06.858Z",
+					"end": "2017-08-22T04:04:06.858Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "protype",
+					"associatedTest": "should be equal to false"
+				},
+				{
+					"start": "2017-08-22T04:04:06.859Z",
+					"end": "2017-08-22T04:04:06.859Z",
+					"duration": 0,
+					"title": "\"after all\" hook",
+					"associatedSuite": "protype"
+				}
+			]
+		},
+		{
+			"name": "`protype( undefined, UNDEFINED )`",
+			"duration": 102,
+			"start": "2017-08-22T04:04:06.177Z",
+			"end": "2017-08-22T04:04:06.279Z",
+			"tests": [
+				{
+					"name": "should be equal to true",
+					"start": "2017-08-22T04:04:06.178Z",
+					"end": "2017-08-22T04:04:06.279Z",
+					"duration": 101,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`protype( NaN, NUMBER )`",
+			"duration": 46,
+			"start": "2017-08-22T04:04:06.279Z",
+			"end": "2017-08-22T04:04:06.325Z",
+			"tests": [
+				{
+					"name": "should be equal to true",
+					"start": "2017-08-22T04:04:06.279Z",
+					"end": "2017-08-22T04:04:06.324Z",
+					"duration": 45,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`protype( '', NUMBER + STRING )`",
+			"duration": 46,
+			"start": "2017-08-22T04:04:06.325Z",
+			"end": "2017-08-22T04:04:06.371Z",
+			"tests": [
+				{
+					"name": "should be equal to true",
+					"start": "2017-08-22T04:04:06.325Z",
+					"end": "2017-08-22T04:04:06.370Z",
+					"duration": 45,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`protype( 'hello', STRING )`",
+			"duration": 42,
+			"start": "2017-08-22T04:04:06.371Z",
+			"end": "2017-08-22T04:04:06.413Z",
+			"tests": [
+				{
+					"name": "should be equal to true",
+					"start": "2017-08-22T04:04:06.371Z",
+					"end": "2017-08-22T04:04:06.413Z",
+					"duration": 42,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`protype( false, STRING, 'yeah', BOOLEAN )`",
+			"duration": 38,
+			"start": "2017-08-22T04:04:06.413Z",
+			"end": "2017-08-22T04:04:06.451Z",
+			"tests": [
+				{
+					"name": "should be equal to true",
+					"start": "2017-08-22T04:04:06.413Z",
+					"end": "2017-08-22T04:04:06.451Z",
+					"duration": 38,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`protype( true, STRING + NUMBER + BOOLEAN )`",
+			"duration": 43,
+			"start": "2017-08-22T04:04:06.452Z",
+			"end": "2017-08-22T04:04:06.495Z",
+			"tests": [
+				{
+					"name": "should be equal to true",
+					"start": "2017-08-22T04:04:06.452Z",
+					"end": "2017-08-22T04:04:06.494Z",
+					"duration": 42,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`protype( 123, NUMBER )`",
+			"duration": 39,
+			"start": "2017-08-22T04:04:06.495Z",
+			"end": "2017-08-22T04:04:06.534Z",
+			"tests": [
+				{
+					"name": "should be equal to true",
+					"start": "2017-08-22T04:04:06.495Z",
+					"end": "2017-08-22T04:04:06.534Z",
+					"duration": 39,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`protype( function hello( ){ }, FUNCTION )`",
+			"duration": 40,
+			"start": "2017-08-22T04:04:06.534Z",
+			"end": "2017-08-22T04:04:06.574Z",
+			"tests": [
+				{
+					"name": "should be equal to true",
+					"start": "2017-08-22T04:04:06.534Z",
+					"end": "2017-08-22T04:04:06.574Z",
+					"duration": 40,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`protype( Symbol.for( 'hello' ), SYMBOL )`",
+			"duration": 57,
+			"start": "2017-08-22T04:04:06.574Z",
+			"end": "2017-08-22T04:04:06.631Z",
+			"tests": [
+				{
+					"name": "should be equal to true",
+					"start": "2017-08-22T04:04:06.575Z",
+					"end": "2017-08-22T04:04:06.631Z",
+					"duration": 56,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`protype( null, OBJECT )`",
+			"duration": 44,
+			"start": "2017-08-22T04:04:06.631Z",
+			"end": "2017-08-22T04:04:06.675Z",
+			"tests": [
+				{
+					"name": "should be equal to true",
+					"start": "2017-08-22T04:04:06.632Z",
+					"end": "2017-08-22T04:04:06.675Z",
+					"duration": 43,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`protype( [ ], OBJECT )`",
+			"duration": 53,
+			"start": "2017-08-22T04:04:06.675Z",
+			"end": "2017-08-22T04:04:06.728Z",
+			"tests": [
+				{
+					"name": "should be equal to true",
+					"start": "2017-08-22T04:04:06.675Z",
+					"end": "2017-08-22T04:04:06.728Z",
+					"duration": 53,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`protype( null, UNDEFINED )`",
+			"duration": 47,
+			"start": "2017-08-22T04:04:06.728Z",
+			"end": "2017-08-22T04:04:06.775Z",
+			"tests": [
+				{
+					"name": "should be equal to false",
+					"start": "2017-08-22T04:04:06.728Z",
+					"end": "2017-08-22T04:04:06.774Z",
+					"duration": 46,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`protype( true, STRING + NUMBER + OBJECT )`",
+			"duration": 84,
+			"start": "2017-08-22T04:04:06.775Z",
+			"end": "2017-08-22T04:04:06.859Z",
+			"tests": [
+				{
+					"name": "should be equal to false",
+					"start": "2017-08-22T04:04:06.775Z",
+					"end": "2017-08-22T04:04:06.858Z",
+					"duration": 83,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		}
+	]
+}
