@@ -1,26 +1,33 @@
 {
 	"stats": {
-		"suites": 14,
-		"tests": 13,
-		"passes": 13,
+		"suites": 26,
+		"tests": 25,
+		"passes": 25,
 		"pending": 0,
 		"failures": 0,
-		"start": "2017-08-22T04:03:26.694Z",
-		"end": "2017-08-22T04:03:26.703Z",
-		"duration": 9
+		"start": "2017-09-19T07:36:51.238Z",
+		"end": "2017-09-19T07:36:51.250Z",
+		"duration": 12
 	},
 	"tests": [
 		{
 			"title": "should be equal to true",
 			"fullTitle": "protype `protype( undefined, UNDEFINED )` should be equal to true",
-			"duration": 0,
+			"duration": 1,
 			"currentRetry": 0,
 			"err": {}
 		},
 		{
 			"title": "should be equal to true",
 			"fullTitle": "protype `protype( NaN, NUMBER )` should be equal to true",
-			"duration": 1,
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to true",
+			"fullTitle": "protype `protype( Infinity, NUMBER )` should be equal to true",
+			"duration": 0,
 			"currentRetry": 0,
 			"err": {}
 		},
@@ -41,7 +48,7 @@
 		{
 			"title": "should be equal to true",
 			"fullTitle": "protype `protype( false, STRING, 'yeah', BOOLEAN )` should be equal to true",
-			"duration": 2,
+			"duration": 1,
 			"currentRetry": 0,
 			"err": {}
 		},
@@ -69,7 +76,7 @@
 		{
 			"title": "should be equal to true",
 			"fullTitle": "protype `protype( Symbol.for( 'hello' ), SYMBOL )` should be equal to true",
-			"duration": 1,
+			"duration": 0,
 			"currentRetry": 0,
 			"err": {}
 		},
@@ -90,13 +97,90 @@
 		{
 			"title": "should be equal to false",
 			"fullTitle": "protype `protype( null, UNDEFINED )` should be equal to false",
-			"duration": 0,
+			"duration": 1,
 			"currentRetry": 0,
 			"err": {}
 		},
 		{
 			"title": "should be equal to false",
 			"fullTitle": "protype `protype( true, STRING + NUMBER + OBJECT )` should be equal to false",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should contain 'STRING' property with a value of true",
+			"fullTitle": "protype `protype( 'hello' )` should contain 'STRING' property with a value of true",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should contain 'NUMBER' property with a value of true",
+			"fullTitle": "protype `protype( 1 )` should contain 'NUMBER' property with a value of true",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to true",
+			"fullTitle": "protype `protype( Infinity )` should be equal to true",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should contain 'NUMBER' property with a value of true",
+			"fullTitle": "protype `protype( NaN )` should contain 'NUMBER' property with a value of true",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should contain 'BOOLEAN' property with a value of true",
+			"fullTitle": "protype `protype( true )` should contain 'BOOLEAN' property with a value of true",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should contain 'OBJECT' property with a value of true",
+			"fullTitle": "protype `protype( [ ] )` should contain 'OBJECT' property with a value of true",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should contain 'OBJECT' property with a value of true",
+			"fullTitle": "protype `protype( { } )` should contain 'OBJECT' property with a value of true",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should contain 'OBJECT' property with a value of true",
+			"fullTitle": "protype `protype( null )` should contain 'OBJECT' property with a value of true",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should contain 'SYMBOL' property with a value of true",
+			"fullTitle": "protype `protype( Symbol.for( 'hello' ) )` should contain 'SYMBOL' property with a value of true",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should contain 'FUNCTION' property with a value of true",
+			"fullTitle": "protype `protype( function hello( ){ } )` should contain 'FUNCTION' property with a value of true",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should contain 'UNDEFINED' property with a value of true",
+			"fullTitle": "protype `protype( undefined )` should contain 'UNDEFINED' property with a value of true",
 			"duration": 0,
 			"currentRetry": 0,
 			"err": {}
@@ -108,14 +192,21 @@
 		{
 			"title": "should be equal to true",
 			"fullTitle": "protype `protype( undefined, UNDEFINED )` should be equal to true",
-			"duration": 0,
+			"duration": 1,
 			"currentRetry": 0,
 			"err": {}
 		},
 		{
 			"title": "should be equal to true",
 			"fullTitle": "protype `protype( NaN, NUMBER )` should be equal to true",
-			"duration": 1,
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to true",
+			"fullTitle": "protype `protype( Infinity, NUMBER )` should be equal to true",
+			"duration": 0,
 			"currentRetry": 0,
 			"err": {}
 		},
@@ -136,7 +227,7 @@
 		{
 			"title": "should be equal to true",
 			"fullTitle": "protype `protype( false, STRING, 'yeah', BOOLEAN )` should be equal to true",
-			"duration": 2,
+			"duration": 1,
 			"currentRetry": 0,
 			"err": {}
 		},
@@ -164,7 +255,7 @@
 		{
 			"title": "should be equal to true",
 			"fullTitle": "protype `protype( Symbol.for( 'hello' ), SYMBOL )` should be equal to true",
-			"duration": 1,
+			"duration": 0,
 			"currentRetry": 0,
 			"err": {}
 		},
@@ -185,13 +276,90 @@
 		{
 			"title": "should be equal to false",
 			"fullTitle": "protype `protype( null, UNDEFINED )` should be equal to false",
-			"duration": 0,
+			"duration": 1,
 			"currentRetry": 0,
 			"err": {}
 		},
 		{
 			"title": "should be equal to false",
 			"fullTitle": "protype `protype( true, STRING + NUMBER + OBJECT )` should be equal to false",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should contain 'STRING' property with a value of true",
+			"fullTitle": "protype `protype( 'hello' )` should contain 'STRING' property with a value of true",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should contain 'NUMBER' property with a value of true",
+			"fullTitle": "protype `protype( 1 )` should contain 'NUMBER' property with a value of true",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to true",
+			"fullTitle": "protype `protype( Infinity )` should be equal to true",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should contain 'NUMBER' property with a value of true",
+			"fullTitle": "protype `protype( NaN )` should contain 'NUMBER' property with a value of true",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should contain 'BOOLEAN' property with a value of true",
+			"fullTitle": "protype `protype( true )` should contain 'BOOLEAN' property with a value of true",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should contain 'OBJECT' property with a value of true",
+			"fullTitle": "protype `protype( [ ] )` should contain 'OBJECT' property with a value of true",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should contain 'OBJECT' property with a value of true",
+			"fullTitle": "protype `protype( { } )` should contain 'OBJECT' property with a value of true",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should contain 'OBJECT' property with a value of true",
+			"fullTitle": "protype `protype( null )` should contain 'OBJECT' property with a value of true",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should contain 'SYMBOL' property with a value of true",
+			"fullTitle": "protype `protype( Symbol.for( 'hello' ) )` should contain 'SYMBOL' property with a value of true",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should contain 'FUNCTION' property with a value of true",
+			"fullTitle": "protype `protype( function hello( ){ } )` should contain 'FUNCTION' property with a value of true",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should contain 'UNDEFINED' property with a value of true",
+			"fullTitle": "protype `protype( undefined )` should contain 'UNDEFINED' property with a value of true",
 			"duration": 0,
 			"currentRetry": 0,
 			"err": {}

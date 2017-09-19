@@ -1,11 +1,11 @@
 {
 	"state": {
-		"passed": 13,
+		"passed": 25,
 		"failed": 0,
 		"skipped": 0
 	},
-	"start": "2017-08-22T04:03:28.717Z",
-	"end": "2017-08-22T04:04:07.036Z",
+	"start": "2017-09-19T07:36:52.362Z",
+	"end": "2017-09-19T07:37:33.009Z",
 	"capabilities": {
 		"browserName": "chrome",
 		"chromeOptions": {
@@ -28,228 +28,420 @@
 		{
 			"name": "protype",
 			"duration": 0,
-			"start": "2017-08-22T04:04:06.176Z",
+			"start": "2017-09-19T07:37:31.817Z",
 			"tests": [],
 			"hooks": []
 		},
 		{
 			"name": "protype",
-			"duration": 682,
-			"start": "2017-08-22T04:04:06.177Z",
-			"end": "2017-08-22T04:04:06.859Z",
+			"duration": 1011,
+			"start": "2017-09-19T07:37:31.817Z",
+			"end": "2017-09-19T07:37:32.828Z",
 			"tests": [],
 			"hooks": [
 				{
-					"start": "2017-08-22T04:04:06.178Z",
-					"end": "2017-08-22T04:04:06.180Z",
+					"start": "2017-09-19T07:37:31.830Z",
+					"end": "2017-09-19T07:37:31.830Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "protype",
+					"associatedTest": "should be equal to true"
+				},
+				{
+					"start": "2017-09-19T07:37:31.911Z",
+					"end": "2017-09-19T07:37:31.911Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "protype",
+					"associatedTest": "should be equal to true"
+				},
+				{
+					"start": "2017-09-19T07:37:31.912Z",
+					"end": "2017-09-19T07:37:31.913Z",
+					"duration": 1,
+					"title": "\"before each\" hook",
+					"associatedSuite": "protype",
+					"associatedTest": "should be equal to true"
+				},
+				{
+					"start": "2017-09-19T07:37:31.950Z",
+					"end": "2017-09-19T07:37:31.950Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "protype",
+					"associatedTest": "should be equal to true"
+				},
+				{
+					"start": "2017-09-19T07:37:31.951Z",
+					"end": "2017-09-19T07:37:31.951Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "protype",
+					"associatedTest": "should be equal to true"
+				},
+				{
+					"start": "2017-09-19T07:37:31.990Z",
+					"end": "2017-09-19T07:37:31.990Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "protype",
+					"associatedTest": "should be equal to true"
+				},
+				{
+					"start": "2017-09-19T07:37:31.991Z",
+					"end": "2017-09-19T07:37:31.991Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "protype",
+					"associatedTest": "should be equal to true"
+				},
+				{
+					"start": "2017-09-19T07:37:32.027Z",
+					"end": "2017-09-19T07:37:32.027Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "protype",
+					"associatedTest": "should be equal to true"
+				},
+				{
+					"start": "2017-09-19T07:37:32.027Z",
+					"end": "2017-09-19T07:37:32.027Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "protype",
+					"associatedTest": "should be equal to true"
+				},
+				{
+					"start": "2017-09-19T07:37:32.062Z",
+					"end": "2017-09-19T07:37:32.062Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "protype",
+					"associatedTest": "should be equal to true"
+				},
+				{
+					"start": "2017-09-19T07:37:32.063Z",
+					"end": "2017-09-19T07:37:32.063Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "protype",
+					"associatedTest": "should be equal to true"
+				},
+				{
+					"start": "2017-09-19T07:37:32.104Z",
+					"end": "2017-09-19T07:37:32.104Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "protype",
+					"associatedTest": "should be equal to true"
+				},
+				{
+					"start": "2017-09-19T07:37:32.105Z",
+					"end": "2017-09-19T07:37:32.105Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "protype",
+					"associatedTest": "should be equal to true"
+				},
+				{
+					"start": "2017-09-19T07:37:32.147Z",
+					"end": "2017-09-19T07:37:32.148Z",
+					"duration": 1,
+					"title": "\"after each\" hook",
+					"associatedSuite": "protype",
+					"associatedTest": "should be equal to true"
+				},
+				{
+					"start": "2017-09-19T07:37:32.148Z",
+					"end": "2017-09-19T07:37:32.149Z",
+					"duration": 1,
+					"title": "\"before each\" hook",
+					"associatedSuite": "protype",
+					"associatedTest": "should be equal to true"
+				},
+				{
+					"start": "2017-09-19T07:37:32.185Z",
+					"end": "2017-09-19T07:37:32.185Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "protype",
+					"associatedTest": "should be equal to true"
+				},
+				{
+					"start": "2017-09-19T07:37:32.186Z",
+					"end": "2017-09-19T07:37:32.187Z",
+					"duration": 1,
+					"title": "\"before each\" hook",
+					"associatedSuite": "protype",
+					"associatedTest": "should be equal to true"
+				},
+				{
+					"start": "2017-09-19T07:37:32.226Z",
+					"end": "2017-09-19T07:37:32.227Z",
+					"duration": 1,
+					"title": "\"after each\" hook",
+					"associatedSuite": "protype",
+					"associatedTest": "should be equal to true"
+				},
+				{
+					"start": "2017-09-19T07:37:32.227Z",
+					"end": "2017-09-19T07:37:32.229Z",
 					"duration": 2,
 					"title": "\"before each\" hook",
 					"associatedSuite": "protype",
 					"associatedTest": "should be equal to true"
 				},
 				{
-					"start": "2017-08-22T04:04:06.279Z",
-					"end": "2017-08-22T04:04:06.279Z",
+					"start": "2017-09-19T07:37:32.264Z",
+					"end": "2017-09-19T07:37:32.264Z",
 					"duration": 0,
 					"title": "\"after each\" hook",
 					"associatedSuite": "protype",
 					"associatedTest": "should be equal to true"
 				},
 				{
-					"start": "2017-08-22T04:04:06.280Z",
-					"end": "2017-08-22T04:04:06.280Z",
+					"start": "2017-09-19T07:37:32.264Z",
+					"end": "2017-09-19T07:37:32.264Z",
 					"duration": 0,
 					"title": "\"before each\" hook",
 					"associatedSuite": "protype",
 					"associatedTest": "should be equal to true"
 				},
 				{
-					"start": "2017-08-22T04:04:06.324Z",
-					"end": "2017-08-22T04:04:06.325Z",
+					"start": "2017-09-19T07:37:32.302Z",
+					"end": "2017-09-19T07:37:32.302Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "protype",
+					"associatedTest": "should be equal to true"
+				},
+				{
+					"start": "2017-09-19T07:37:32.302Z",
+					"end": "2017-09-19T07:37:32.302Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "protype",
+					"associatedTest": "should be equal to true"
+				},
+				{
+					"start": "2017-09-19T07:37:32.352Z",
+					"end": "2017-09-19T07:37:32.353Z",
 					"duration": 1,
 					"title": "\"after each\" hook",
 					"associatedSuite": "protype",
 					"associatedTest": "should be equal to true"
 				},
 				{
-					"start": "2017-08-22T04:04:06.325Z",
-					"end": "2017-08-22T04:04:06.325Z",
+					"start": "2017-09-19T07:37:32.353Z",
+					"end": "2017-09-19T07:37:32.353Z",
 					"duration": 0,
 					"title": "\"before each\" hook",
 					"associatedSuite": "protype",
-					"associatedTest": "should be equal to true"
+					"associatedTest": "should be equal to false"
 				},
 				{
-					"start": "2017-08-22T04:04:06.370Z",
-					"end": "2017-08-22T04:04:06.370Z",
+					"start": "2017-09-19T07:37:32.388Z",
+					"end": "2017-09-19T07:37:32.388Z",
 					"duration": 0,
 					"title": "\"after each\" hook",
 					"associatedSuite": "protype",
-					"associatedTest": "should be equal to true"
+					"associatedTest": "should be equal to false"
 				},
 				{
-					"start": "2017-08-22T04:04:06.371Z",
-					"end": "2017-08-22T04:04:06.371Z",
-					"duration": 0,
+					"start": "2017-09-19T07:37:32.389Z",
+					"end": "2017-09-19T07:37:32.390Z",
+					"duration": 1,
 					"title": "\"before each\" hook",
 					"associatedSuite": "protype",
-					"associatedTest": "should be equal to true"
+					"associatedTest": "should be equal to false"
 				},
 				{
-					"start": "2017-08-22T04:04:06.413Z",
-					"end": "2017-08-22T04:04:06.413Z",
+					"start": "2017-09-19T07:37:32.424Z",
+					"end": "2017-09-19T07:37:32.424Z",
 					"duration": 0,
 					"title": "\"after each\" hook",
 					"associatedSuite": "protype",
-					"associatedTest": "should be equal to true"
+					"associatedTest": "should be equal to false"
 				},
 				{
-					"start": "2017-08-22T04:04:06.414Z",
-					"end": "2017-08-22T04:04:06.414Z",
+					"start": "2017-09-19T07:37:32.425Z",
+					"end": "2017-09-19T07:37:32.425Z",
 					"duration": 0,
 					"title": "\"before each\" hook",
 					"associatedSuite": "protype",
-					"associatedTest": "should be equal to true"
+					"associatedTest": "should contain 'STRING' property with a value of true"
 				},
 				{
-					"start": "2017-08-22T04:04:06.451Z",
-					"end": "2017-08-22T04:04:06.451Z",
+					"start": "2017-09-19T07:37:32.465Z",
+					"end": "2017-09-19T07:37:32.465Z",
 					"duration": 0,
 					"title": "\"after each\" hook",
 					"associatedSuite": "protype",
-					"associatedTest": "should be equal to true"
+					"associatedTest": "should contain 'STRING' property with a value of true"
 				},
 				{
-					"start": "2017-08-22T04:04:06.452Z",
-					"end": "2017-08-22T04:04:06.452Z",
+					"start": "2017-09-19T07:37:32.466Z",
+					"end": "2017-09-19T07:37:32.466Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "protype",
+					"associatedTest": "should contain 'NUMBER' property with a value of true"
+				},
+				{
+					"start": "2017-09-19T07:37:32.507Z",
+					"end": "2017-09-19T07:37:32.507Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "protype",
+					"associatedTest": "should contain 'NUMBER' property with a value of true"
+				},
+				{
+					"start": "2017-09-19T07:37:32.508Z",
+					"end": "2017-09-19T07:37:32.508Z",
 					"duration": 0,
 					"title": "\"before each\" hook",
 					"associatedSuite": "protype",
 					"associatedTest": "should be equal to true"
 				},
 				{
-					"start": "2017-08-22T04:04:06.494Z",
-					"end": "2017-08-22T04:04:06.495Z",
+					"start": "2017-09-19T07:37:32.544Z",
+					"end": "2017-09-19T07:37:32.545Z",
 					"duration": 1,
 					"title": "\"after each\" hook",
 					"associatedSuite": "protype",
 					"associatedTest": "should be equal to true"
 				},
 				{
-					"start": "2017-08-22T04:04:06.495Z",
-					"end": "2017-08-22T04:04:06.496Z",
+					"start": "2017-09-19T07:37:32.545Z",
+					"end": "2017-09-19T07:37:32.545Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "protype",
+					"associatedTest": "should contain 'NUMBER' property with a value of true"
+				},
+				{
+					"start": "2017-09-19T07:37:32.580Z",
+					"end": "2017-09-19T07:37:32.580Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "protype",
+					"associatedTest": "should contain 'NUMBER' property with a value of true"
+				},
+				{
+					"start": "2017-09-19T07:37:32.580Z",
+					"end": "2017-09-19T07:37:32.580Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "protype",
+					"associatedTest": "should contain 'BOOLEAN' property with a value of true"
+				},
+				{
+					"start": "2017-09-19T07:37:32.615Z",
+					"end": "2017-09-19T07:37:32.615Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "protype",
+					"associatedTest": "should contain 'BOOLEAN' property with a value of true"
+				},
+				{
+					"start": "2017-09-19T07:37:32.616Z",
+					"end": "2017-09-19T07:37:32.616Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "protype",
+					"associatedTest": "should contain 'OBJECT' property with a value of true"
+				},
+				{
+					"start": "2017-09-19T07:37:32.651Z",
+					"end": "2017-09-19T07:37:32.651Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "protype",
+					"associatedTest": "should contain 'OBJECT' property with a value of true"
+				},
+				{
+					"start": "2017-09-19T07:37:32.651Z",
+					"end": "2017-09-19T07:37:32.651Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "protype",
+					"associatedTest": "should contain 'OBJECT' property with a value of true"
+				},
+				{
+					"start": "2017-09-19T07:37:32.682Z",
+					"end": "2017-09-19T07:37:32.682Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "protype",
+					"associatedTest": "should contain 'OBJECT' property with a value of true"
+				},
+				{
+					"start": "2017-09-19T07:37:32.683Z",
+					"end": "2017-09-19T07:37:32.683Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "protype",
+					"associatedTest": "should contain 'OBJECT' property with a value of true"
+				},
+				{
+					"start": "2017-09-19T07:37:32.719Z",
+					"end": "2017-09-19T07:37:32.719Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "protype",
+					"associatedTest": "should contain 'OBJECT' property with a value of true"
+				},
+				{
+					"start": "2017-09-19T07:37:32.719Z",
+					"end": "2017-09-19T07:37:32.720Z",
 					"duration": 1,
 					"title": "\"before each\" hook",
 					"associatedSuite": "protype",
-					"associatedTest": "should be equal to true"
+					"associatedTest": "should contain 'SYMBOL' property with a value of true"
 				},
 				{
-					"start": "2017-08-22T04:04:06.534Z",
-					"end": "2017-08-22T04:04:06.534Z",
+					"start": "2017-09-19T07:37:32.755Z",
+					"end": "2017-09-19T07:37:32.755Z",
 					"duration": 0,
 					"title": "\"after each\" hook",
 					"associatedSuite": "protype",
-					"associatedTest": "should be equal to true"
+					"associatedTest": "should contain 'SYMBOL' property with a value of true"
 				},
 				{
-					"start": "2017-08-22T04:04:06.535Z",
-					"end": "2017-08-22T04:04:06.536Z",
+					"start": "2017-09-19T07:37:32.756Z",
+					"end": "2017-09-19T07:37:32.756Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "protype",
+					"associatedTest": "should contain 'FUNCTION' property with a value of true"
+				},
+				{
+					"start": "2017-09-19T07:37:32.791Z",
+					"end": "2017-09-19T07:37:32.792Z",
 					"duration": 1,
-					"title": "\"before each\" hook",
-					"associatedSuite": "protype",
-					"associatedTest": "should be equal to true"
-				},
-				{
-					"start": "2017-08-22T04:04:06.574Z",
-					"end": "2017-08-22T04:04:06.574Z",
-					"duration": 0,
 					"title": "\"after each\" hook",
 					"associatedSuite": "protype",
-					"associatedTest": "should be equal to true"
+					"associatedTest": "should contain 'FUNCTION' property with a value of true"
 				},
 				{
-					"start": "2017-08-22T04:04:06.577Z",
-					"end": "2017-08-22T04:04:06.577Z",
+					"start": "2017-09-19T07:37:32.793Z",
+					"end": "2017-09-19T07:37:32.793Z",
 					"duration": 0,
 					"title": "\"before each\" hook",
 					"associatedSuite": "protype",
-					"associatedTest": "should be equal to true"
+					"associatedTest": "should contain 'UNDEFINED' property with a value of true"
 				},
 				{
-					"start": "2017-08-22T04:04:06.631Z",
-					"end": "2017-08-22T04:04:06.631Z",
+					"start": "2017-09-19T07:37:32.827Z",
+					"end": "2017-09-19T07:37:32.827Z",
 					"duration": 0,
 					"title": "\"after each\" hook",
 					"associatedSuite": "protype",
-					"associatedTest": "should be equal to true"
+					"associatedTest": "should contain 'UNDEFINED' property with a value of true"
 				},
 				{
-					"start": "2017-08-22T04:04:06.632Z",
-					"end": "2017-08-22T04:04:06.632Z",
-					"duration": 0,
-					"title": "\"before each\" hook",
-					"associatedSuite": "protype",
-					"associatedTest": "should be equal to true"
-				},
-				{
-					"start": "2017-08-22T04:04:06.675Z",
-					"end": "2017-08-22T04:04:06.675Z",
-					"duration": 0,
-					"title": "\"after each\" hook",
-					"associatedSuite": "protype",
-					"associatedTest": "should be equal to true"
-				},
-				{
-					"start": "2017-08-22T04:04:06.675Z",
-					"end": "2017-08-22T04:04:06.675Z",
-					"duration": 0,
-					"title": "\"before each\" hook",
-					"associatedSuite": "protype",
-					"associatedTest": "should be equal to true"
-				},
-				{
-					"start": "2017-08-22T04:04:06.728Z",
-					"end": "2017-08-22T04:04:06.728Z",
-					"duration": 0,
-					"title": "\"after each\" hook",
-					"associatedSuite": "protype",
-					"associatedTest": "should be equal to true"
-				},
-				{
-					"start": "2017-08-22T04:04:06.728Z",
-					"end": "2017-08-22T04:04:06.728Z",
-					"duration": 0,
-					"title": "\"before each\" hook",
-					"associatedSuite": "protype",
-					"associatedTest": "should be equal to false"
-				},
-				{
-					"start": "2017-08-22T04:04:06.775Z",
-					"end": "2017-08-22T04:04:06.775Z",
-					"duration": 0,
-					"title": "\"after each\" hook",
-					"associatedSuite": "protype",
-					"associatedTest": "should be equal to false"
-				},
-				{
-					"start": "2017-08-22T04:04:06.775Z",
-					"end": "2017-08-22T04:04:06.775Z",
-					"duration": 0,
-					"title": "\"before each\" hook",
-					"associatedSuite": "protype",
-					"associatedTest": "should be equal to false"
-				},
-				{
-					"start": "2017-08-22T04:04:06.858Z",
-					"end": "2017-08-22T04:04:06.858Z",
-					"duration": 0,
-					"title": "\"after each\" hook",
-					"associatedSuite": "protype",
-					"associatedTest": "should be equal to false"
-				},
-				{
-					"start": "2017-08-22T04:04:06.859Z",
-					"end": "2017-08-22T04:04:06.859Z",
+					"start": "2017-09-19T07:37:32.828Z",
+					"end": "2017-09-19T07:37:32.828Z",
 					"duration": 0,
 					"title": "\"after all\" hook",
 					"associatedSuite": "protype"
@@ -258,15 +450,31 @@
 		},
 		{
 			"name": "`protype( undefined, UNDEFINED )`",
-			"duration": 102,
-			"start": "2017-08-22T04:04:06.177Z",
-			"end": "2017-08-22T04:04:06.279Z",
+			"duration": 83,
+			"start": "2017-09-19T07:37:31.829Z",
+			"end": "2017-09-19T07:37:31.912Z",
 			"tests": [
 				{
 					"name": "should be equal to true",
-					"start": "2017-08-22T04:04:06.178Z",
-					"end": "2017-08-22T04:04:06.279Z",
-					"duration": 101,
+					"start": "2017-09-19T07:37:31.829Z",
+					"end": "2017-09-19T07:37:31.911Z",
+					"duration": 82,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`protype( Infinity, NUMBER )`",
+			"duration": 38,
+			"start": "2017-09-19T07:37:31.912Z",
+			"end": "2017-09-19T07:37:31.950Z",
+			"tests": [
+				{
+					"name": "should be equal to true",
+					"start": "2017-09-19T07:37:31.912Z",
+					"end": "2017-09-19T07:37:31.950Z",
+					"duration": 38,
 					"state": "pass"
 				}
 			],
@@ -274,15 +482,15 @@
 		},
 		{
 			"name": "`protype( NaN, NUMBER )`",
-			"duration": 46,
-			"start": "2017-08-22T04:04:06.279Z",
-			"end": "2017-08-22T04:04:06.325Z",
+			"duration": 40,
+			"start": "2017-09-19T07:37:31.950Z",
+			"end": "2017-09-19T07:37:31.990Z",
 			"tests": [
 				{
 					"name": "should be equal to true",
-					"start": "2017-08-22T04:04:06.279Z",
-					"end": "2017-08-22T04:04:06.324Z",
-					"duration": 45,
+					"start": "2017-09-19T07:37:31.950Z",
+					"end": "2017-09-19T07:37:31.990Z",
+					"duration": 40,
 					"state": "pass"
 				}
 			],
@@ -290,15 +498,15 @@
 		},
 		{
 			"name": "`protype( '', NUMBER + STRING )`",
-			"duration": 46,
-			"start": "2017-08-22T04:04:06.325Z",
-			"end": "2017-08-22T04:04:06.371Z",
+			"duration": 37,
+			"start": "2017-09-19T07:37:31.990Z",
+			"end": "2017-09-19T07:37:32.027Z",
 			"tests": [
 				{
 					"name": "should be equal to true",
-					"start": "2017-08-22T04:04:06.325Z",
-					"end": "2017-08-22T04:04:06.370Z",
-					"duration": 45,
+					"start": "2017-09-19T07:37:31.990Z",
+					"end": "2017-09-19T07:37:32.027Z",
+					"duration": 37,
 					"state": "pass"
 				}
 			],
@@ -306,15 +514,15 @@
 		},
 		{
 			"name": "`protype( 'hello', STRING )`",
-			"duration": 42,
-			"start": "2017-08-22T04:04:06.371Z",
-			"end": "2017-08-22T04:04:06.413Z",
+			"duration": 36,
+			"start": "2017-09-19T07:37:32.027Z",
+			"end": "2017-09-19T07:37:32.063Z",
 			"tests": [
 				{
 					"name": "should be equal to true",
-					"start": "2017-08-22T04:04:06.371Z",
-					"end": "2017-08-22T04:04:06.413Z",
-					"duration": 42,
+					"start": "2017-09-19T07:37:32.027Z",
+					"end": "2017-09-19T07:37:32.062Z",
+					"duration": 35,
 					"state": "pass"
 				}
 			],
@@ -322,15 +530,15 @@
 		},
 		{
 			"name": "`protype( false, STRING, 'yeah', BOOLEAN )`",
-			"duration": 38,
-			"start": "2017-08-22T04:04:06.413Z",
-			"end": "2017-08-22T04:04:06.451Z",
+			"duration": 41,
+			"start": "2017-09-19T07:37:32.063Z",
+			"end": "2017-09-19T07:37:32.104Z",
 			"tests": [
 				{
 					"name": "should be equal to true",
-					"start": "2017-08-22T04:04:06.413Z",
-					"end": "2017-08-22T04:04:06.451Z",
-					"duration": 38,
+					"start": "2017-09-19T07:37:32.063Z",
+					"end": "2017-09-19T07:37:32.104Z",
+					"duration": 41,
 					"state": "pass"
 				}
 			],
@@ -339,13 +547,13 @@
 		{
 			"name": "`protype( true, STRING + NUMBER + BOOLEAN )`",
 			"duration": 43,
-			"start": "2017-08-22T04:04:06.452Z",
-			"end": "2017-08-22T04:04:06.495Z",
+			"start": "2017-09-19T07:37:32.105Z",
+			"end": "2017-09-19T07:37:32.148Z",
 			"tests": [
 				{
 					"name": "should be equal to true",
-					"start": "2017-08-22T04:04:06.452Z",
-					"end": "2017-08-22T04:04:06.494Z",
+					"start": "2017-09-19T07:37:32.105Z",
+					"end": "2017-09-19T07:37:32.147Z",
 					"duration": 42,
 					"state": "pass"
 				}
@@ -354,15 +562,15 @@
 		},
 		{
 			"name": "`protype( 123, NUMBER )`",
-			"duration": 39,
-			"start": "2017-08-22T04:04:06.495Z",
-			"end": "2017-08-22T04:04:06.534Z",
+			"duration": 37,
+			"start": "2017-09-19T07:37:32.148Z",
+			"end": "2017-09-19T07:37:32.185Z",
 			"tests": [
 				{
 					"name": "should be equal to true",
-					"start": "2017-08-22T04:04:06.495Z",
-					"end": "2017-08-22T04:04:06.534Z",
-					"duration": 39,
+					"start": "2017-09-19T07:37:32.148Z",
+					"end": "2017-09-19T07:37:32.185Z",
+					"duration": 37,
 					"state": "pass"
 				}
 			],
@@ -370,15 +578,15 @@
 		},
 		{
 			"name": "`protype( function hello( ){ }, FUNCTION )`",
-			"duration": 40,
-			"start": "2017-08-22T04:04:06.534Z",
-			"end": "2017-08-22T04:04:06.574Z",
+			"duration": 42,
+			"start": "2017-09-19T07:37:32.185Z",
+			"end": "2017-09-19T07:37:32.227Z",
 			"tests": [
 				{
 					"name": "should be equal to true",
-					"start": "2017-08-22T04:04:06.534Z",
-					"end": "2017-08-22T04:04:06.574Z",
-					"duration": 40,
+					"start": "2017-09-19T07:37:32.185Z",
+					"end": "2017-09-19T07:37:32.226Z",
+					"duration": 41,
 					"state": "pass"
 				}
 			],
@@ -386,15 +594,15 @@
 		},
 		{
 			"name": "`protype( Symbol.for( 'hello' ), SYMBOL )`",
-			"duration": 57,
-			"start": "2017-08-22T04:04:06.574Z",
-			"end": "2017-08-22T04:04:06.631Z",
+			"duration": 37,
+			"start": "2017-09-19T07:37:32.227Z",
+			"end": "2017-09-19T07:37:32.264Z",
 			"tests": [
 				{
 					"name": "should be equal to true",
-					"start": "2017-08-22T04:04:06.575Z",
-					"end": "2017-08-22T04:04:06.631Z",
-					"duration": 56,
+					"start": "2017-09-19T07:37:32.227Z",
+					"end": "2017-09-19T07:37:32.264Z",
+					"duration": 37,
 					"state": "pass"
 				}
 			],
@@ -402,15 +610,15 @@
 		},
 		{
 			"name": "`protype( null, OBJECT )`",
-			"duration": 44,
-			"start": "2017-08-22T04:04:06.631Z",
-			"end": "2017-08-22T04:04:06.675Z",
+			"duration": 38,
+			"start": "2017-09-19T07:37:32.264Z",
+			"end": "2017-09-19T07:37:32.302Z",
 			"tests": [
 				{
 					"name": "should be equal to true",
-					"start": "2017-08-22T04:04:06.632Z",
-					"end": "2017-08-22T04:04:06.675Z",
-					"duration": 43,
+					"start": "2017-09-19T07:37:32.264Z",
+					"end": "2017-09-19T07:37:32.301Z",
+					"duration": 37,
 					"state": "pass"
 				}
 			],
@@ -418,15 +626,15 @@
 		},
 		{
 			"name": "`protype( [ ], OBJECT )`",
-			"duration": 53,
-			"start": "2017-08-22T04:04:06.675Z",
-			"end": "2017-08-22T04:04:06.728Z",
+			"duration": 51,
+			"start": "2017-09-19T07:37:32.302Z",
+			"end": "2017-09-19T07:37:32.353Z",
 			"tests": [
 				{
 					"name": "should be equal to true",
-					"start": "2017-08-22T04:04:06.675Z",
-					"end": "2017-08-22T04:04:06.728Z",
-					"duration": 53,
+					"start": "2017-09-19T07:37:32.302Z",
+					"end": "2017-09-19T07:37:32.352Z",
+					"duration": 50,
 					"state": "pass"
 				}
 			],
@@ -434,15 +642,15 @@
 		},
 		{
 			"name": "`protype( null, UNDEFINED )`",
-			"duration": 47,
-			"start": "2017-08-22T04:04:06.728Z",
-			"end": "2017-08-22T04:04:06.775Z",
+			"duration": 36,
+			"start": "2017-09-19T07:37:32.353Z",
+			"end": "2017-09-19T07:37:32.389Z",
 			"tests": [
 				{
 					"name": "should be equal to false",
-					"start": "2017-08-22T04:04:06.728Z",
-					"end": "2017-08-22T04:04:06.774Z",
-					"duration": 46,
+					"start": "2017-09-19T07:37:32.353Z",
+					"end": "2017-09-19T07:37:32.388Z",
+					"duration": 35,
 					"state": "pass"
 				}
 			],
@@ -450,15 +658,191 @@
 		},
 		{
 			"name": "`protype( true, STRING + NUMBER + OBJECT )`",
-			"duration": 84,
-			"start": "2017-08-22T04:04:06.775Z",
-			"end": "2017-08-22T04:04:06.859Z",
+			"duration": 35,
+			"start": "2017-09-19T07:37:32.389Z",
+			"end": "2017-09-19T07:37:32.424Z",
 			"tests": [
 				{
 					"name": "should be equal to false",
-					"start": "2017-08-22T04:04:06.775Z",
-					"end": "2017-08-22T04:04:06.858Z",
-					"duration": 83,
+					"start": "2017-09-19T07:37:32.389Z",
+					"end": "2017-09-19T07:37:32.424Z",
+					"duration": 35,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`protype( 'hello' )`",
+			"duration": 41,
+			"start": "2017-09-19T07:37:32.424Z",
+			"end": "2017-09-19T07:37:32.465Z",
+			"tests": [
+				{
+					"name": "should contain 'STRING' property with a value of true",
+					"start": "2017-09-19T07:37:32.424Z",
+					"end": "2017-09-19T07:37:32.465Z",
+					"duration": 41,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`protype( 1 )`",
+			"duration": 42,
+			"start": "2017-09-19T07:37:32.465Z",
+			"end": "2017-09-19T07:37:32.507Z",
+			"tests": [
+				{
+					"name": "should contain 'NUMBER' property with a value of true",
+					"start": "2017-09-19T07:37:32.466Z",
+					"end": "2017-09-19T07:37:32.506Z",
+					"duration": 40,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`protype( Infinity )`",
+			"duration": 38,
+			"start": "2017-09-19T07:37:32.507Z",
+			"end": "2017-09-19T07:37:32.545Z",
+			"tests": [
+				{
+					"name": "should be equal to true",
+					"start": "2017-09-19T07:37:32.508Z",
+					"end": "2017-09-19T07:37:32.544Z",
+					"duration": 36,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`protype( NaN )`",
+			"duration": 35,
+			"start": "2017-09-19T07:37:32.545Z",
+			"end": "2017-09-19T07:37:32.580Z",
+			"tests": [
+				{
+					"name": "should contain 'NUMBER' property with a value of true",
+					"start": "2017-09-19T07:37:32.545Z",
+					"end": "2017-09-19T07:37:32.580Z",
+					"duration": 35,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`protype( true )`",
+			"duration": 35,
+			"start": "2017-09-19T07:37:32.580Z",
+			"end": "2017-09-19T07:37:32.615Z",
+			"tests": [
+				{
+					"name": "should contain 'BOOLEAN' property with a value of true",
+					"start": "2017-09-19T07:37:32.580Z",
+					"end": "2017-09-19T07:37:32.615Z",
+					"duration": 35,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`protype( [ ] )`",
+			"duration": 35,
+			"start": "2017-09-19T07:37:32.616Z",
+			"end": "2017-09-19T07:37:32.651Z",
+			"tests": [
+				{
+					"name": "should contain 'OBJECT' property with a value of true",
+					"start": "2017-09-19T07:37:32.616Z",
+					"end": "2017-09-19T07:37:32.650Z",
+					"duration": 34,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`protype( { } )`",
+			"duration": 31,
+			"start": "2017-09-19T07:37:32.651Z",
+			"end": "2017-09-19T07:37:32.682Z",
+			"tests": [
+				{
+					"name": "should contain 'OBJECT' property with a value of true",
+					"start": "2017-09-19T07:37:32.651Z",
+					"end": "2017-09-19T07:37:32.682Z",
+					"duration": 31,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`protype( null )`",
+			"duration": 37,
+			"start": "2017-09-19T07:37:32.682Z",
+			"end": "2017-09-19T07:37:32.719Z",
+			"tests": [
+				{
+					"name": "should contain 'OBJECT' property with a value of true",
+					"start": "2017-09-19T07:37:32.683Z",
+					"end": "2017-09-19T07:37:32.719Z",
+					"duration": 36,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`protype( Symbol.for( 'hello' ) )`",
+			"duration": 36,
+			"start": "2017-09-19T07:37:32.719Z",
+			"end": "2017-09-19T07:37:32.755Z",
+			"tests": [
+				{
+					"name": "should contain 'SYMBOL' property with a value of true",
+					"start": "2017-09-19T07:37:32.719Z",
+					"end": "2017-09-19T07:37:32.755Z",
+					"duration": 36,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`protype( function hello( ){ } )`",
+			"duration": 37,
+			"start": "2017-09-19T07:37:32.755Z",
+			"end": "2017-09-19T07:37:32.792Z",
+			"tests": [
+				{
+					"name": "should contain 'FUNCTION' property with a value of true",
+					"start": "2017-09-19T07:37:32.755Z",
+					"end": "2017-09-19T07:37:32.791Z",
+					"duration": 36,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`protype( undefined )`",
+			"duration": 35,
+			"start": "2017-09-19T07:37:32.793Z",
+			"end": "2017-09-19T07:37:32.828Z",
+			"tests": [
+				{
+					"name": "should contain 'UNDEFINED' property with a value of true",
+					"start": "2017-09-19T07:37:32.793Z",
+					"end": "2017-09-19T07:37:32.827Z",
+					"duration": 34,
 					"state": "pass"
 				}
 			],
