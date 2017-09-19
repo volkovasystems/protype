@@ -592,6 +592,23 @@ describe( "protype", ( ) => {
 	} );
 
 
+	describe( "`protype( Infinity, NUMBER )`", ( ) => {
+		it( "should be equal to true", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return protype( Infinity, NUMBER );
+				}
+
+			).value;
+			//: @end-ignore
+			assert.equal( result, true );
+
+		} );
+	} );
+
+
 	describe( "`protype( NaN, NUMBER )`", ( ) => {
 		it( "should be equal to true", ( ) => {
 
@@ -744,6 +761,26 @@ describe( "protype", ( ) => {
 
 			).value;
 
+			assert.equal( result, true );
+
+		} );
+	} );
+
+	describe( "`protype( Infinity )`", ( ) => {
+		it( "should be equal to true", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					let result = protype( Infinity );
+					let test = result.NUMBER == true &&
+						result.type == "number";
+
+					return test;
+				}
+
+			).value;
+			//: @end-ignore
 			assert.equal( result, true );
 
 		} );
