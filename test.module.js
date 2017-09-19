@@ -49,13 +49,13 @@
 
 	@include:
 		{
-			"assert": "should",
+			"assert": "should/as-function",
 			"protype": "protype"
 		}
 	@end-include
 */
 
-const assert = require( "should" );
+const assert = require( "should/as-function" );
 
 //: @server:
 const protype = require( "./protype.js" );
@@ -191,6 +191,114 @@ describe( "protype", ( ) => {
 		} );
 	} );
 
+	describe( "`protype( 'hello' )`", ( ) => {
+		it( "should contain 'STRING' property with a value of true", ( ) => {
+			let result = protype( "hello" );
+
+			assert.equal( result.STRING, true );
+
+			assert.equal( result.type, "string" );
+
+		} );
+	} );
+
+	describe( "`protype( 1 )`", ( ) => {
+		it( "should contain 'NUMBER' property with a value of true", ( ) => {
+			let result = protype( 1 );
+
+			assert.equal( result.NUMBER, true );
+
+			assert.equal( result.type, "number" );
+
+		} );
+	} );
+
+	describe( "`protype( NaN )`", ( ) => {
+		it( "should contain 'NUMBER' property with a value of true", ( ) => {
+			let result = protype( NaN );
+
+			assert.equal( result.NUMBER, true );
+
+		} );
+	} );
+
+	describe( "`protype( true )`", ( ) => {
+		it( "should contain 'BOOLEAN' property with a value of true", ( ) => {
+			let result = protype( true );
+
+			assert.equal( result.BOOLEAN, true );
+
+			assert.equal( result.type, "boolean" );
+
+		} );
+	} );
+
+	describe( "`protype( [ ] )`", ( ) => {
+		it( "should contain 'OBJECT' property with a value of true", ( ) => {
+			let result = protype( [ ] );
+
+			assert.equal( result.OBJECT, true );
+
+			assert.equal( result.type, "object" );
+
+		} );
+	} );
+
+	describe( "`protype( { } )`", ( ) => {
+		it( "should contain 'OBJECT' property with a value of true", ( ) => {
+			let result = protype( { } );
+
+			assert.equal( result.OBJECT, true );
+
+			assert.equal( result.type, "object" );
+
+		} );
+	} );
+
+	describe( "`protype( null )`", ( ) => {
+		it( "should contain 'OBJECT' property with a value of true", ( ) => {
+			let result = protype( null );
+
+			assert.equal( result.OBJECT, true );
+
+			assert.equal( result.type, "object" );
+
+		} );
+	} );
+
+	describe( "`protype( Symbol.for( 'hello' ) )`", ( ) => {
+		it( "should contain 'SYMBOL' property with a value of true", ( ) => {
+			let result = protype( Symbol.for( "hello" ) );
+
+			assert.equal( result.SYMBOL, true );
+
+			assert.equal( result.type, "symbol" );
+
+		} );
+	} );
+
+	describe( "`protype( function hello( ){ } )`", ( ) => {
+		it( "should contain 'FUNCTION' property with a value of true", ( ) => {
+			let result = protype( function hello( ){ } );
+
+			assert.equal( result.FUNCTION, true );
+
+			assert.equal( result.type, "function" );
+
+		} );
+	} );
+
+	describe( "`protype( undefined )`", ( ) => {
+		it( "should contain 'UNDEFINED' property with a value of true", ( ) => {
+			let result = protype( undefined );
+
+			assert.equal( result.UNDEFINED, true );
+
+			assert.equal( result.type, "undefined" );
+
+		} );
+	} );
+
 } );
 
 //: @end-server
@@ -313,6 +421,114 @@ describe( "protype", ( ) => {
 		it( "should be equal to false", ( ) => {
 
 			assert.equal( protype( true, STRING + NUMBER + OBJECT ), false );
+
+		} );
+	} );
+
+	describe( "`protype( 'hello' )`", ( ) => {
+		it( "should contain 'STRING' property with a value of true", ( ) => {
+			let result = protype( "hello" );
+
+			assert.equal( result.STRING, true );
+
+			assert.equal( result.type, "string" );
+
+		} );
+	} );
+
+	describe( "`protype( 1 )`", ( ) => {
+		it( "should contain 'NUMBER' property with a value of true", ( ) => {
+			let result = protype( 1 );
+
+			assert.equal( result.NUMBER, true );
+
+			assert.equal( result.type, "number" );
+
+		} );
+	} );
+
+	describe( "`protype( NaN )`", ( ) => {
+		it( "should contain 'NUMBER' property with a value of true", ( ) => {
+			let result = protype( NaN );
+
+			assert.equal( result.NUMBER, true );
+
+		} );
+	} );
+
+	describe( "`protype( true )`", ( ) => {
+		it( "should contain 'BOOLEAN' property with a value of true", ( ) => {
+			let result = protype( true );
+
+			assert.equal( result.BOOLEAN, true );
+
+			assert.equal( result.type, "boolean" );
+
+		} );
+	} );
+
+	describe( "`protype( [ ] )`", ( ) => {
+		it( "should contain 'OBJECT' property with a value of true", ( ) => {
+			let result = protype( [ ] );
+
+			assert.equal( result.OBJECT, true );
+
+			assert.equal( result.type, "object" );
+
+		} );
+	} );
+
+	describe( "`protype( { } )`", ( ) => {
+		it( "should contain 'OBJECT' property with a value of true", ( ) => {
+			let result = protype( { } );
+
+			assert.equal( result.OBJECT, true );
+
+			assert.equal( result.type, "object" );
+
+		} );
+	} );
+
+	describe( "`protype( null )`", ( ) => {
+		it( "should contain 'OBJECT' property with a value of true", ( ) => {
+			let result = protype( null );
+
+			assert.equal( result.OBJECT, true );
+
+			assert.equal( result.type, "object" );
+
+		} );
+	} );
+
+	describe( "`protype( Symbol.for( 'hello' ) )`", ( ) => {
+		it( "should contain 'SYMBOL' property with a value of true", ( ) => {
+			let result = protype( Symbol.for( "hello" ) );
+
+			assert.equal( result.SYMBOL, true );
+
+			assert.equal( result.type, "symbol" );
+
+		} );
+	} );
+
+	describe( "`protype( function hello( ){ } )`", ( ) => {
+		it( "should contain 'FUNCTION' property with a value of true", ( ) => {
+			let result = protype( function hello( ){ } );
+
+			assert.equal( result.FUNCTION, true );
+
+			assert.equal( result.type, "function" );
+
+		} );
+	} );
+
+	describe( "`protype( undefined )`", ( ) => {
+		it( "should contain 'UNDEFINED' property with a value of true", ( ) => {
+			let result = protype( undefined );
+
+			assert.equal( result.UNDEFINED, true );
+
+			assert.equal( result.type, "undefined" );
 
 		} );
 	} );
