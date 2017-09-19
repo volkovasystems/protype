@@ -92,6 +92,14 @@ describe( "protype", ( ) => {
 		} );
 	} );
 
+	describe( "`protype( Infinity, NUMBER )`", ( ) => {
+		it( "should be equal to true", ( ) => {
+
+			assert.equal( protype( Infinity, NUMBER ), true );
+
+		} );
+	} );
+
 
 	describe( "`protype( '', NUMBER + STRING )`", ( ) => {
 		it( "should be equal to true", ( ) => {
@@ -213,6 +221,17 @@ describe( "protype", ( ) => {
 		} );
 	} );
 
+	describe( "`protype( Infinity )`", ( ) => {
+		it( "should be equal to true", ( ) => {
+			let result = protype( Infinity );
+
+			assert.equal( result.NUMBER, true );
+
+			assert.equal( result.type, "number" );
+
+		} );
+	} );
+
 	describe( "`protype( NaN )`", ( ) => {
 		it( "should contain 'NUMBER' property with a value of true", ( ) => {
 			let result = protype( NaN );
@@ -322,6 +341,14 @@ describe( "protype", ( ) => {
 		it( "should be equal to true", ( ) => {
 
 			assert.equal( protype( NaN, NUMBER ), true );
+
+		} );
+	} );
+
+	describe( "`protype( Infinity, NUMBER )`", ( ) => {
+		it( "should be equal to true", ( ) => {
+
+			assert.equal( protype( Infinity, NUMBER ), true );
 
 		} );
 	} );
@@ -439,6 +466,17 @@ describe( "protype", ( ) => {
 	describe( "`protype( 1 )`", ( ) => {
 		it( "should contain 'NUMBER' property with a value of true", ( ) => {
 			let result = protype( 1 );
+
+			assert.equal( result.NUMBER, true );
+
+			assert.equal( result.type, "number" );
+
+		} );
+	} );
+
+	describe( "`protype( Infinity )`", ( ) => {
+		it( "should be equal to true", ( ) => {
+			let result = protype( Infinity );
 
 			assert.equal( result.NUMBER, true );
 
@@ -669,6 +707,197 @@ describe( "protype", ( ) => {
 
 			let result = browser.url( bridgeURL ).execute( ( ) => protype( true, STRING + NUMBER + OBJECT ) );
 			assert.equal( result.value, false );
+
+		} );
+	} );
+
+	describe( "`protype( 'hello' )`", ( ) => {
+		it( "should contain 'STRING' property with a value of true", ( ) => {
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					let result = protype( "hello" );
+					let test = result.STRING == true &&
+						result.type == "string";
+
+					return test;
+				}
+
+			).value;
+
+			assert.equal( result, true );
+
+		} );
+	} );
+
+	describe( "`protype( 1 )`", ( ) => {
+		it( "should contain 'NUMBER' property with a value of true", ( ) => {
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					let result = protype( 1 );
+					let test = result.NUMBER == true &&
+						result.type == "number";
+
+					return test;
+				}
+
+			).value;
+
+			assert.equal( result, true );
+
+		} );
+	} );
+
+	describe( "`protype( NaN )`", ( ) => {
+		it( "should contain 'NUMBER' property with a value of true", ( ) => {
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					let result = protype( NaN );
+					let test = result.NUMBER == true &&
+						result.type == "number";
+
+					return test;
+				}
+
+			).value;
+
+			assert.equal( result, true );
+
+		} );
+	} );
+
+	describe( "`protype( true )`", ( ) => {
+		it( "should contain 'BOOLEAN' property with a value of true", ( ) => {
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					let result = protype( true );
+					let test = result.BOOLEAN == true &&
+						result.type == "boolean";
+
+					return test;
+				}
+
+			).value;
+
+			assert.equal( result, true );
+
+		} );
+	} );
+
+	describe( "`protype( [ ] )`", ( ) => {
+		it( "should contain 'OBJECT' property with a value of true", ( ) => {
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					let result = protype( [ ] );
+					let test = result.OBJECT == true &&
+						result.type == "object";
+
+					return test;
+				}
+
+			).value;
+
+			assert.equal( result, true );
+
+		} );
+	} );
+
+	describe( "`protype( { } )`", ( ) => {
+		it( "should contain 'OBJECT' property with a value of true", ( ) => {
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					let result = protype( { } );
+					let test = result.OBJECT == true &&
+						result.type == "object";
+
+					return test;
+				}
+
+			).value;
+
+			assert.equal( result, true );
+
+		} );
+	} );
+
+	describe( "`protype( null )`", ( ) => {
+		it( "should contain 'OBJECT' property with a value of true", ( ) => {
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					let result = protype( null );
+					let test = result.OBJECT == true &&
+						result.type == "object";
+
+					return test;
+				}
+
+			).value;
+
+			assert.equal( result, true );
+
+		} );
+	} );
+
+	describe( "`protype( Symbol.for( 'hello' ) )`", ( ) => {
+		it( "should contain 'SYMBOL' property with a value of true", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					let result = protype( Symbol.for( "hello" ) );
+					let test = result.SYMBOL == true &&
+						result.type == "symbol";
+
+					return test;
+				}
+
+			).value;
+			//: @end-ignore
+			assert.equal( result, true );
+
+		} );
+	} );
+
+	describe( "`protype( function hello( ){ } )`", ( ) => {
+		it( "should contain 'FUNCTION' property with a value of true", ( ) => {
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					let result = protype( function hello( ){ } );
+					let test = result.FUNCTION == true &&
+						result.type == "function";
+
+					return test;
+				}
+
+			).value;
+
+			assert.equal( result, true );
+
+		} );
+	} );
+
+	describe( "`protype( undefined )`", ( ) => {
+		it( "should contain 'UNDEFINED' property with a value of true", ( ) => {
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					let result = protype( undefined );
+					let test = result.UNDEFINED == true &&
+						result.type == "undefined";
+
+					return test;
+				}
+
+			).value;
+
+			assert.equal( result, true );
 
 		} );
 	} );
